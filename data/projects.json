@@ -1,14 +1,164 @@
 [
   {
     "id": "proj-001",
-    "title": "Mobile Game",
+    "title": "Puzzle Game",
     "creator": "Jason",
     "major": "Software Development",
-    "category": "Game Development",
-    "tools": ["Unity","Blender","VsCode"],
-    "description": "A 3d puzzle game built during the summer vacation 2026. It was created in Unity using Blender and Vscode to design and code the entire game from scratch. Its a solo project by Jason.",
+    "category": "Game Design",
+    "tools": [
+      "Unity",
+      "Blender",
+      "VS Code"
+    ],
+    "description": "A 3D puzzle game built during the summer vacation 2026. It was created in Unity using Blender and VS Code to design and code the entire game from scratch. It's a solo project by Jason.",
     "thumbnail": "assets/thumbnails/project-001.png",
     "projectUrl": "https://example.com",
     "date": "2026-07-26"
+  },
+  {
+    "id": "proj-002",
+    "title": "Game Character-Promton",
+    "creator": "Jessica",
+    "major": "Arts",
+    "category": "Art & Design",
+    "tools": [
+      "Blender",
+      "Canva"
+    ],
+    "description": "A digital male character designed for an online PVP game. It's a 3D character with detailed, realistic design and a smooth added animation created through Blender.",
+    "thumbnail": "assets/thumbnails/project-002.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-09-22"
+  },
+  {
+    "id": "proj-003",
+    "title": "Antivirus Software",
+    "creator": "Tylor",
+    "major": "Computer Science",
+    "category": "Technology",
+    "tools": [
+      "Ghidra",
+      "Windows SDK",
+      "Visual Studio",
+      "YARA",
+      "VirtualBox",
+      "ProcMon"
+    ],
+    "description": "An antivirus program for windows that runs in the background and provides pc with auto-malware detection and removal, deep scanning on any downloaded apps and fortifying system files to prevent files corruption or crash.",
+    "thumbnail": "assets/thumbnails/project-003.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-04-21"
+  },
+  {
+    "id": "proj-004",
+    "title": "A share market graph analysing model created using LLMs and business major team members",
+    "creator": "Dyson",
+    "major": "Business",
+    "category": "Technology",
+    "tools": [
+      "Python",
+      "LM Studio",
+      "LangChain"
+    ],
+    "description": "A share market graph analysing AI model capable of analysing the upward and downward trend of the graph and notifying the users accordingly.",
+    "thumbnail": "assets/thumbnails/project-004.png",
+    "projectUrl": "https://example.com",
+    "date": "2025-03-27"
+  },
+  {
+    "id": "proj-005",
+    "title": "Solar-Powered Phone Charger",
+    "creator": "Maria",
+    "major": "Mechanical Engineering",
+    "category": "Engineering",
+    "tools": [
+      "Arduino",
+      "Fusion 360",
+      "3D Printing"
+    ],
+    "description": "A portable charger with a built-in solar panel and a 3D-printed case, designed for campus use.",
+    "thumbnail": "assets/thumbnails/project-005.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-05-14"
+  },
+  {
+    "id": "proj-006",
+    "title": "Campus Coffee Cart Business Plan",
+    "creator": "Omar",
+    "major": "Business Administration",
+    "category": "Business",
+    "tools": [
+      "Excel",
+      "Canva",
+      "PowerPoint"
+    ],
+    "description": "A full business plan for a student-run coffee cart, with cost estimates, pricing and a pitch deck.",
+    "thumbnail": "assets/thumbnails/project-006.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-02-10"
+  },
+  {
+    "id": "proj-007",
+    "title": "Neighborhood Poster Series",
+    "creator": "Priya",
+    "major": "Graphic Design",
+    "category": "Art & Design",
+    "tools": [
+      "Illustrator",
+      "Photoshop"
+    ],
+    "description": "A set of five posters celebrating Long Island City landmarks, designed for a community art walk.",
+    "thumbnail": "assets/thumbnails/project-007.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-06-03"
+  },
+  {
+    "id": "proj-008",
+    "title": "Study Group Finder",
+    "creator": "Chris",
+    "major": "Computer Science",
+    "category": "Technology",
+    "tools": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Firebase"
+    ],
+    "description": "A web app that helps students find and join study groups by course and time.",
+    "thumbnail": "assets/thumbnails/project-008.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-08-15"
+  },
+  {
+    "id": "proj-009",
+    "title": "Smart Plant Watering System",
+    "creator": "Lena",
+    "major": "Electrical Engineering",
+    "category": "Engineering",
+    "tools": [
+      "Arduino",
+      "Raspberry Pi",
+      "Python"
+    ],
+    "description": "A moisture-sensing system that waters houseplants automatically and sends a phone alert when the tank is low.",
+    "thumbnail": "assets/thumbnails/project-009.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-03-30"
+  },
+  {
+    "id": "proj-010",
+    "title": "Subway Run",
+    "creator": "Marcus",
+    "major": "Digital Media",
+    "category": "Game Design",
+    "tools": [
+      "Godot",
+      "Aseprite",
+      "Audacity"
+    ],
+    "description": "A 2D pixel-art platformer about dodging obstacles on a subway platform, with original music and sound effects.",
+    "thumbnail": "assets/thumbnails/project-010.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-09-05"
   }
 ]
