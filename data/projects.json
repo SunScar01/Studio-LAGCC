@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "proj-001",
+    "title": "Mobile Game",
+    "creator": "Jason",
+    "major": "Software Development",
+    "category": "Game Design", "Game Dev",
+    "tools": ["Unity","Blender","VsCode"],
+    "description": "A 3d puzzle game built during the summer vacation 2026. It was created in Unity using Blender and Vscode to design and code the entire game from scratch. Its a solo project by Jason.",
+    "thumbnail": "assets/thumbnails/project-001.webp",
+    "projectUrl": "https://example.com",
+    "date": "2026-07-26"
+  }
+]
