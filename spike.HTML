@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fetch spike</title>
+</head>
+<body>
+  <h1>Projects</h1>
+  <ul id="list"></ul>
+  <p id="message"></p>
+
+  <script>
+    async function loadProjects() {
+      const BASE_URL = "https://raw.githubusercontent.com/SunScar01/Studio-LAGCC/main/";
+      const message = document.getElementById("message");
+
+      try {
+        const response = await fetch(BASE_URL + "data/projects.json");
+
+        if (!response.ok) {
+          throw new Error("Server returned " + response.status);
+        }
+
+        const projects = await response.json();
+        const list = document.getElementById("list");
+
+        for (const project of projects) {
+          const li = document.createElement("li");
+
+          const img = document.createElement("img");
+          img.src = BASE_URL + project.thumbnail;
+          img.alt = project.title;
+          img.width = 120;
+
+          const text = document.createElement("span");
+          text.textContent = ` ${project.title} by ${project.creator} (${project.category})`;
+
+          li.appendChild(img);
+          li.appendChild(text);
+          list.appendChild(li);
+        }
+      } catch (error) {
+        console.error(error);
+        message.textContent = "Sorry, we couldn't load the projects. Please try again later.";
+      }
+    }
+
+    loadProjects();
+  </script>
+</body>
+</html>
