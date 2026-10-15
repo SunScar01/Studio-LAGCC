@@ -47,9 +47,3 @@
 - Thumbnail files live in `assets/thumbnails/` and are named after the project number, for example `project-001.png`. The path in the JSON must match the real file name exactly, including capitalization and extension.
 - Thumbnails are sample images we have the right to use. Do not use photos of identifiable people without permission.
 - Sample data uses fictional projects and people. Real student work needs written permission.
-
-## Edge cases the code must handle
-- Very long titles.
-- Missing `thumbnail` or `projectUrl`.
-- Many tools on one project.
-- No projects matching a search or filter (empty state).
