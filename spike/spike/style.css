@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --lagcc-red: #C4262E;
+  --ink: #333333;
+  --gray-light: #E2E2E2;
+  --white: #FFFFFF;
+  --font-display: "Overpass", Arial, sans-serif;
+  --font-body: "Merriweather", Times, serif;
+  --space: 24px;
+  --card-min: 340px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: var(--space);
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+h1, h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+h1 { font-size: 36px; line-height: 1.2; margin-bottom: var(--space); }
+h2 { font-size: 20px; color: var(--lagcc-red); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--card-min)), 1fr));
+  gap: var(--space);
+}
+
+.card {
+  border: 1px solid var(--gray-light);
+  border-top: 6px solid var(--lagcc-red);
+  padding: var(--space);
+}
+.card p { margin: 0; }
