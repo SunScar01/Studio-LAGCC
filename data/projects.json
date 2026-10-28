@@ -67,8 +67,8 @@
     "id": "proj-004",
     "title": "A share market graph analysing model created using LLMs and business major team members",
     "creator": "Dyson",
-    "major": "Business",
-    "category": "Technology",
+    "major": "Finance",
+    "category": "Finance",
     "tools": [
       "Python",
       "LM Studio",
@@ -122,15 +122,15 @@
   },
   {
     "id": "proj-007",
-    "title": "Neighborhood Poster Series",
+    "title": "Public Health Poster Series",
     "creator": "Priya",
-    "major": "Graphic Design",
-    "category": "Art & Design",
+    "major": "Nursing",
+    "category": "Healthcare",
     "tools": [
       "Illustrator",
       "Photoshop"
     ],
-    "description": "A set of five posters celebrating Long Island City landmarks, designed for a community art walk.",
+    "description": "A set of five posters promoting flu shots, hand-washing and healthy sleep, designed for a campus health fair.",
     "thumbnail": "assets/thumbnails/project-007.png",
     "projectUrl": "https://example.com",
     "date": "2026-06-03",
@@ -142,8 +142,8 @@
     "id": "proj-008",
     "title": "Study Group Finder",
     "creator": "Chris",
-    "major": "Computer Science",
-    "category": "Technology",
+    "major": "Education",
+    "category": "Education",
     "tools": [
       "JavaScript",
       "HTML",
@@ -162,14 +162,14 @@
     "id": "proj-009",
     "title": "Smart Plant Watering System",
     "creator": "Lena",
-    "major": "Electrical Engineering",
-    "category": "Engineering",
+    "major": "Biology",
+    "category": "Science",
     "tools": [
       "Arduino",
       "Raspberry Pi",
       "Python"
     ],
-    "description": "A moisture-sensing system that waters houseplants automatically and sends a phone alert when the tank is low.",
+    "description": "A moisture-sensing system that waters houseplants automatically and sends a phone alert when the tank is low. Built for a plant biology class.",
     "thumbnail": "assets/thumbnails/project-009.png",
     "projectUrl": "https://example.com",
     "date": "2026-03-30",
@@ -182,7 +182,7 @@
     "title": "Subway Run",
     "creator": "Marcus",
     "major": "Digital Media",
-    "category": "Game Design",
+    "category": "Interactive Media",
     "tools": [
       "Godot",
       "Aseprite",
