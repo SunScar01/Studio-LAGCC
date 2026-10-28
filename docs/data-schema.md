@@ -40,12 +40,29 @@
 }
 ```
 
+## Allowed majors
+- Software Development
+- Arts
+- Computer Science
+- Finance
+- Mechanical Engineering
+- Business Administration
+- Nursing
+- Education
+- Biology
+- Digital Media
+
 ## Allowed categories
-- Technology
 - Game Design
 - Art & Design
+- Technology
+- Finance
 - Engineering
 - Business
+- Healthcare
+- Education
+- Science
+- Interactive Media
 
 ## Sorting
 - **Newest:** by `date`, latest first.
@@ -55,6 +72,7 @@
 ## Rules
 - The file is a single JSON array. Objects are separated by commas, with no comma after the last one.
 - `id` values are unique and follow the pattern `proj-001`, `proj-002`, and so on.
+- `major` must exactly match one of the allowed majors.
 - `category` must exactly match one of the allowed categories, including capitalization and the `&`.
 - `date` uses `YYYY-MM-DD`.
 - Tool names use one spelling everywhere (`VS Code`, not `Vscode`; `LangChain`, not `Lang Chain`).
