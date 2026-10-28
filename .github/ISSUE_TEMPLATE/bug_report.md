@@ -1,15 +1,14 @@
-   ---
-   name: Bug report
-   about: Something is broken on the site
-   labels: bug
-   ---
 
-   ## What happened?
+name: Bug report
+about: Something is broken on the site
+labels: bug
 
-   ## What did you expect?
+## What happened?
 
-   ## Steps to reproduce
-   1.
-   2.
+## What did you expect?
 
-   ## Browser and device
+## Steps to reproduce
+1.
+2.
+
+## Browser and device
