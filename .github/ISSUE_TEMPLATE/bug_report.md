@@ -1,9 +1,8 @@
-
+---
 name: Bug report
---
 about: Something is broken on the site
---
 labels: bug
+---
 
 ## What happened?
 
