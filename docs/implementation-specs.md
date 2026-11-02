@@ -50,7 +50,7 @@ Cards sit in `<ul class="project-grid">`. The save button is a sibling of the li
 
 **Bookmarks (decided):** the bookmark button saves or removes the project id in LocalStorage (key `lagccStudioBookmarks`, an array of ids). It does not open the page. Clicking it toggles `aria-pressed`, the icon fills when saved, and the card is not navigated. Bookmarks only exist in this browser. Needs supervisor approval, because favorites are on the out-of-scope list.
 
-**States:** default; hover (lift, off under `prefers-reduced-motion`); focus (3px outline on the link and on the bookmark button, never removed); bookmark off and on; long title (2 lines then ellipsis); missing thumbnail (show the LAGCC STUDIO logo as the placeholder, via `onerror` or when `thumbnail` is empty); loading (6 skeleton cards); LocalStorage blocked (hide the bookmark button, the cards still work).
+**States:** default; hover (lift, off under `prefers-reduced-motion`); focus (3px outline on the link and on the bookmark button, never removed); bookmark off and on; long title (2 lines then ellipsis); missing thumbnail (show the no-image icon, `assets/images/no-image.svg`, via `onerror` or when `thumbnail` is empty); loading (6 skeleton cards); LocalStorage blocked (hide the bookmark button, the cards still work).
 **Card size (decided):** fixed card height. Image area has a fixed ratio, the title clamps to 2 lines and the creator to 1 line, so every card in a row is the same height.
 **Accessibility:** the card is a real link, so Tab and Enter work; `alt=""` because the title is beside it; the bookmark button has an `aria-label` that names the project and `aria-pressed` for its on/off state; the heart is `aria-hidden` and the count is read as text; contrast 4.5:1 or higher.
 
@@ -249,7 +249,7 @@ Cards sit in `<ul class="project-grid">`. The save button is a sibling of the li
 ## Decisions (from the supervisor and team)
 1. Likes stay on the card and the project page. The supervisor approved them. They are display-only demo counts.
 2. Cards have a fixed height.
-3. A missing thumbnail shows the LAGCC STUDIO logo.
+3. A missing thumbnail shows a generic no-image icon (`assets/images/no-image.svg`), not the logo.
 4. No modal. A card opens its own page (`project.html?id=...`). No Previous/Next buttons.
 5. The submission form is one page, not four steps.
 6. A Category filter is added next to Major in the Gallery.
@@ -268,27 +268,3 @@ Cards sit in `<ul class="project-grid">`. The save button is a sibling of the li
 4. Shakira: the wireframes need the comments section, the login and sign-up screens, the signed-in header and a dark theme.
 5. Marketing and Communications: is a dark theme and a dark-background logo allowed?
 6. Do cards show a comment count?
-
----
-
-## Review notes (Week 4 walkthrough, 2026-10-28)
-Attendees: Sanskar, Shakira, Aman
-
-| Component | Matches Figma? | Change or risk | Said by | Done? |
-|---|---|---|---|---|
-| Project card | | | | |
-| Project page | | | | |
-| Search and filter bar | | | | |
-| Comments | | | | |
-| Login and sign up | | | | |
-| Light and dark theme | | | | |
-| Submission form | | | | |
-| Empty and error states | | | | |
-| Mobile layout | | | | |
-
-Open questions:
-- Are the detail-page tags the same as `tools`?
-- Where is the latest prototype?
-
-Action items (who, what, by when):
--
