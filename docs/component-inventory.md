@@ -12,21 +12,24 @@ Based on Shakira's wireframes (Home, Gallery, Project Detail, Submission, Succes
 | Search field | all | title, description, tools, creator | OK. Handle empty input, extra spaces and special characters. |
 | Filter: Major | Gallery | major | Fixed list of 10 majors in `data-schema.md`. |
 | Filter: Category | Gallery | category | Decided: dropdown next to Major. Needs adding to the wireframe. |
+| Card bookmark button | Home, Gallery, Project | none (ids saved in LocalStorage) | Decided: saves in the browser, does not open the page. Needs supervisor approval (favorites are out of scope). Needs a way to view saved projects. |
 | Sort: Newest | Gallery | date | OK. |
 | Sort: Most Popular | Gallery | likes | OK, using demo likes. |
 | Sort / tab: Recommended | Gallery | recommended | OK, using the flag. |
 | Results count ("6 results") | Gallery | none | Calculated from the filtered list. |
 | Pagination | Gallery | none | Extra work. Decide if the MVP needs it (10 projects). |
 | Reset / Clear Filters | Gallery, Empty | none | OK. |
-| Detail view (modal or page) | Detail | all fields | Shows images, tags and "View Project." No Previous/Next (decided). |
-| Detail: image gallery | Detail | thumbnail, images | Handle none, one or several. |
-| Detail: tags | Detail | tools | Same as `tools`? Ask. |
-| Detail: "More Projects" | Detail | category | Rule needed (same category?). |
+| Project page (`project.html?id=`) | Project | all fields | Decided: no modal, a card opens its own page. Shows images, tags and "View Project." No Previous/Next. Needs a not-found state. |
+| Project page: image gallery | Project | thumbnail, images | Handle none, one or several. |
+| Project page: tags | Project | tools | Same as `tools`? Ask. |
+| Project page: "More Projects" | Project | category | Rule needed (same category?). |
 | Submission form (one page) | Submission | title, description, major, category, tools, thumbnail, projectUrl, **creator** | Creator is a required field (decided). Missing in the wireframe, so add it. |
 | Success screen | Success | none | "View My Project" must find the new LocalStorage entry. |
 | Empty state ("No projects found") | Empty/Error | none | Matches our empty-state handling. |
 | Error state | Empty/Error | none | Matches our fetch `try`/`catch`. |
-| Login / Sign Up (demo) | Header | none (a name saved in LocalStorage) | Last priority. Needs supervisor approval. |
+| Login / Sign Up (demo) | Header | none (a name saved in LocalStorage) | Decided: demo only, no password. Needs supervisor approval (authentication is out of scope). |
+| Comments section | Project | `comments` (`id`, `author`, `text`, `date`) | Decided: sample comments from the JSON plus comments saved in the browser. Needs login to post. Needs supervisor approval (comments are out of scope). |
+| Theme toggle | Header, all | none (choice saved in LocalStorage) | Decided: light and dark. Needs a dark palette in Figma and a contrast check. |
 | Footer | all | none | Links should point somewhere real. |
 
 ## Risks
@@ -35,8 +38,12 @@ Based on Shakira's wireframes (Home, Gallery, Project Detail, Submission, Succes
 - **Image upload** in the form: LocalStorage holds about 5 MB of text, so storing real files is a problem. Store only a file name or a small preview.
 - **Major and Category filters:** each of the 10 sample projects has a different major and category, so the dropdowns have 10 options each and a filter shows one project. The values must match the schema lists exactly.
 - **Very long titles, missing thumbnails, many tools** on one project (from the schema edge cases).
+- **Bookmarks** are stored per browser and are lost if site data is cleared. LocalStorage can be blocked, so hide the button if it is.
+- **Separate project page:** a wrong or missing `?id=` needs a not-found state, and GitHub Pages needs relative links.
 - **Pagination** adds work. Confirm it is in the MVP.
 
+- **Comments** are not shared between visitors, and the text must be shown as plain text, never HTML.
+- **Dark theme:** the official red fails contrast as text on dark. The logo may need a dark-background version.
 
 ## Schema status
 `data-schema.md` already includes `images`, `likes` and `recommended`. Featured uses `recommended`.
