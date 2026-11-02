@@ -44,20 +44,6 @@ Based on Shakira's wireframes (Home, Gallery, Project Detail, Submission, Succes
 
 - **Comments** are not shared between visitors, and the text must be shown as plain text, never HTML.
 - **Dark theme:** the official red fails contrast as text on dark. The logo may need a dark-background version.
-- **Scope:** bookmarks, comments, demo login and the dark theme are approved by the supervisor as demos. Keep the written approval on file.
-
-## Changes to tell Shakira
-1. Add a Category dropdown next to Major on the Gallery screen.
-2. Add a Creator name field to the submission form (one page, not four steps).
-3. Featured Projects uses the `recommended` flag, so no design change.
-4. Cards have a bookmark button, and clicking a card opens its own page (no modal).
-5. Add a comments section to the project page, with a signed-out state.
-6. Add Log in and Sign up screens and a signed-in header.
-7. Design a dark theme and a theme toggle in the header.
-
-## Question for Shakira
-- Are the project-page tags the same as `tools`?
-- Where do people see their saved projects?
 
 ## Schema status
 `data-schema.md` already includes `images`, `likes` and `recommended`. Featured uses `recommended`.
