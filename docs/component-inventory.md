@@ -7,7 +7,7 @@ Based on Shakira's wireframes (Home, Gallery, Project Detail, Submission, Succes
 |---|---|---|---|
 | Header (logo, nav, search, buttons) | all | none | Login / Sign Up are demo-only. |
 | Hero | Home | none | Images come from the Image Bank, not the data. |
-| Project card | Home, Gallery, Detail ("More Projects") | thumbnail, title, creator, major, category, likes | Fixed height. Missing thumbnail shows the logo. Likes approved by supervisor. |
+| Project card | Home, Gallery, Detail ("More Projects") | thumbnail, title, creator, major, category, likes | Fixed height. Missing or broken thumbnail shows the no-image icon (`assets/images/no-image.svg`). Likes approved by supervisor. |
 | Featured Projects row + "View All" | Home | same as card | Decided: shows projects where `recommended` is true. |
 | Search field | all | title, description, tools, creator | OK. Handle empty input, extra spaces and special characters. |
 | Filter: Major | Gallery | major | Fixed list of 10 majors in `data-schema.md`. |
