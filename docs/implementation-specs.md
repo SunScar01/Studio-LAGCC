@@ -48,9 +48,9 @@ Cards sit in `<ul class="project-grid">`. The save button is a sibling of the li
 | `project-card__likes` | Heart icon plus count. Display only. 0 if missing. |
 | `project-card__save` | Bookmark button, top right of the image. 44px target, sits above the link. |
 
-**Bookmarks (decided):** the bookmark button saves or removes the project id in LocalStorage (key `makerHubBookmarks`, an array of ids). It does not open the page. Clicking it toggles `aria-pressed`, the icon fills when saved, and the card is not navigated. Bookmarks only exist in this browser. Needs supervisor approval, because favorites are on the out-of-scope list.
+**Bookmarks (decided):** the bookmark button saves or removes the project id in LocalStorage (key `lagccStudioBookmarks`, an array of ids). It does not open the page. Clicking it toggles `aria-pressed`, the icon fills when saved, and the card is not navigated. Bookmarks only exist in this browser. Needs supervisor approval, because favorites are on the out-of-scope list.
 
-**States:** default; hover (lift, off under `prefers-reduced-motion`); focus (3px outline on the link and on the bookmark button, never removed); bookmark off and on; long title (2 lines then ellipsis); missing thumbnail (show the Maker Hub logo as the placeholder, via `onerror` or when `thumbnail` is empty); loading (6 skeleton cards); LocalStorage blocked (hide the bookmark button, the cards still work).
+**States:** default; hover (lift, off under `prefers-reduced-motion`); focus (3px outline on the link and on the bookmark button, never removed); bookmark off and on; long title (2 lines then ellipsis); missing thumbnail (show the LAGCC STUDIO logo as the placeholder, via `onerror` or when `thumbnail` is empty); loading (6 skeleton cards); LocalStorage blocked (hide the bookmark button, the cards still work).
 **Card size (decided):** fixed card height. Image area has a fixed ratio, the title clamps to 2 lines and the creator to 1 line, so every card in a row is the same height.
 **Accessibility:** the card is a real link, so Tab and Enter work; `alt=""` because the title is beside it; the bookmark button has an `aria-label` that names the project and `aria-pressed` for its on/off state; the heart is `aria-hidden` and the count is read as text; contrast 4.5:1 or higher.
 
@@ -164,7 +164,7 @@ Cards sit in `<ul class="project-grid">`. The save button is a sibling of the li
 ## 5. Comments (project page)
 
 **Used on:** the project page, below the description
-**Data inputs:** `comments` (`id`, `author`, `text`, `date`) from the JSON, plus comments saved in this browser (LocalStorage `makerHubComments`). Needs `auth.js` for the signed-in name.
+**Data inputs:** `comments` (`id`, `author`, `text`, `date`) from the JSON, plus comments saved in this browser (LocalStorage `lagccStudioComments`). Needs `auth.js` for the signed-in name.
 
 ```html
 <section class="comments" aria-labelledby="comments-title">
@@ -206,7 +206,7 @@ Cards sit in `<ul class="project-grid">`. The save button is a sibling of the li
 ## 6. Demo login and sign up
 
 **Used on:** header buttons, plus a small dialog or page
-**Data inputs:** none from the JSON. The signed-in name is stored in LocalStorage (`makerHubUser`).
+**Data inputs:** none from the JSON. The signed-in name is stored in LocalStorage (`lagccStudioUser`).
 **Demo only, no real accounts.** There is no server, so nothing is verified and nothing is shared.
 
 | Class | Purpose |
@@ -227,7 +227,7 @@ Cards sit in `<ul class="project-grid">`. The save button is a sibling of the li
 ## 7. Light and dark theme
 
 **Used on:** every page; a toggle button in the header
-**Data inputs:** none. The choice is saved in LocalStorage (`makerHubTheme`: `light` or `dark`).
+**Data inputs:** none. The choice is saved in LocalStorage (`lagccStudioTheme`: `light` or `dark`).
 
 **How it works**
 - All colors are CSS variables in `css/variables.css`. The light values are on `:root`. The dark values are on `:root[data-theme="dark"]`.
@@ -249,7 +249,7 @@ Cards sit in `<ul class="project-grid">`. The save button is a sibling of the li
 ## Decisions (from the supervisor and team)
 1. Likes stay on the card and the project page. The supervisor approved them. They are display-only demo counts.
 2. Cards have a fixed height.
-3. A missing thumbnail shows the Maker Hub logo.
+3. A missing thumbnail shows the LAGCC STUDIO logo.
 4. No modal. A card opens its own page (`project.html?id=...`). No Previous/Next buttons.
 5. The submission form is one page, not four steps.
 6. A Category filter is added next to Major in the Gallery.
@@ -259,16 +259,15 @@ Cards sit in `<ul class="project-grid">`. The save button is a sibling of the li
 10. Projects have a `comments` field. Visitors can add comments, saved only in their browser (demo).
 11. Demo login and sign up in the header (no real accounts, no passwords).
 12. Light and dark theme with a header toggle.
+13. The supervisor approved bookmarks, comments, demo login and sign up, and the dark theme (as demos, 2026-11-02). The product name is LAGCC STUDIO.
 
 ## Still open
 1. Shakira: update the wireframes with the Category dropdown (Gallery) and the Creator field (Submission form).
 2. Are the project-page tags the same as `tools`? (Assumed yes.)
-3. Supervisor: are bookmarks OK? Favorites are on the out-of-scope list.
-4. Where do people see their saved projects?
-5. Supervisor: comments and accounts are on the out-of-scope list (social features, authentication). Are they approved as demos?
-6. Shakira: the wireframes need the comments section, the login and sign-up screens, the signed-in header and a dark theme.
-7. Marketing and Communications: is a dark theme and a dark-background logo allowed?
-8. Do cards show a comment count? Options: a "Saved only" checkbox in the filter bar, or a Saved page.
+3. Where do people see their saved projects? Options: a "Saved only" checkbox in the filter bar, or a Saved page.
+4. Shakira: the wireframes need the comments section, the login and sign-up screens, the signed-in header and a dark theme.
+5. Marketing and Communications: is a dark theme and a dark-background logo allowed?
+6. Do cards show a comment count?
 
 ---
 
