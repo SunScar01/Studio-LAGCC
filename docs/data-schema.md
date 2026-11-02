@@ -52,7 +52,7 @@
 | text | string | yes | The comment, plain text, 1 to 500 characters. Always shown as text, never as HTML. | `"Great project."` |
 | date | string | yes | `YYYY-MM-DD`. Comments are shown oldest first. | `"2026-08-02"` |
 
-**Where new comments live:** the JSON file holds only the sample comments. A comment typed on the site is saved in the visitor's browser (LocalStorage key `makerHubComments`, grouped by project `id`) and shown together with the sample ones. It is not shared with other visitors and it disappears if the browser data is cleared. The site must say so ("Demo: comments are only saved in this browser").
+**Where new comments live:** the JSON file holds only the sample comments. A comment typed on the site is saved in the visitor's browser (LocalStorage key `lagccStudioComments`, grouped by project `id`) and shown together with the sample ones. It is not shared with other visitors and it disappears if the browser data is cleared. The site must say so ("Demo: comments are only saved in this browser").
 
 ## Allowed majors
 - Software Development
