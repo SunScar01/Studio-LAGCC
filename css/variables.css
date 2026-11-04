@@ -1,10 +1,10 @@
 :root {
   /* colors */
-  --color-brand-red: #C4262E;
+  --color-brand-red: #C8102E;   /* from Figma */
   --color-bg: #FFFFFF;
   --color-surface: #F1F1F1;
-  --color-text: #111111;
-  --color-text-muted: #555555;
+  --color-text: #333333;
+  --color-text-muted: #63666A;
   --color-border: #DDDDDD;
   --color-focus: #1A5FD0;
 
