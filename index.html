@@ -3,12 +3,130 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LAGCC STUDIO Showcase</title>
+  <title>LAGCC STUDIO</title>
+  <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-  <h1>LAGCC STUDIO Showcase</h1>
-  <p>Coming soon.</p>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-logo" href="index.html"><img src="assets/images/logo-horizontal.svg" alt="LAGCC STUDIO, home" width="162" height="46"></a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Explore</a></li>
+          <li><a href="index.html">Collections</a></li>
+          <li><a href="index.html">About</a></li>
+        </ul>
+      </nav>
+      <input class="site-search" type="search" placeholder="Search works, students" aria-label="Search projects">
+      <div class="site-actions">
+        <button class="icon-button" type="button" aria-label="Switch to dark theme">🌙</button>
+        <a href="#">Log In</a>
+        <a class="button" href="submit.html">Submit</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Next generations <span class="hero__accent">of Creators is at</span> LaGuardia</h1>
+        <p>Curate portfolios and innovative projects from the creative minds at LaGuardia.</p>
+        <a class="button" href="submit.html">Start project</a>
+        <a class="link-arrow" href="#projects">View →</a>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="chips" role="group" aria-label="Filter by category">
+          <button class="chip" type="button" aria-pressed="true">All</button>
+          <button class="chip" type="button" aria-pressed="false">Game Design</button>
+          <button class="chip" type="button" aria-pressed="false">Art &amp; Design</button>
+          <button class="chip" type="button" aria-pressed="false">Technology</button>
+          <button class="chip" type="button" aria-pressed="false">Finance</button>
+          <button class="chip" type="button" aria-pressed="false">Engineering</button>
+          <button class="chip" type="button" aria-pressed="false">Business</button>
+          <button class="chip" type="button" aria-pressed="false">Healthcare</button>
+          <button class="chip" type="button" aria-pressed="false">Education</button>
+          <button class="chip" type="button" aria-pressed="false">Science</button>
+          <button class="chip" type="button" aria-pressed="false">Interactive Media</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__media">
+              <a href="project.html?id=proj-001"><img class="project-card__image" src="assets/thumbnails/project-001.png" alt=""></a>
+              <div class="project-card__tools">
+                <button class="icon-button" type="button" aria-pressed="false" aria-label="Save Puzzle Game">🔖</button>
+                <button class="icon-button" type="button" aria-label="Share Puzzle Game">↗</button>
+              </div>
+            </div>
+            <div class="project-card__row">
+              <h3 class="project-card__title"><a href="project.html?id=proj-001">Puzzle Game</a></h3>
+              <p class="project-card__stats">♡ 120 · 💬 3</p>
+            </div>
+            <p class="project-card__meta">Jason, Software Development</p>
+          </article>
+          <article class="project-card">
+            <div class="project-card__media">
+              <a href="project.html?id=proj-004"><img class="project-card__image" src="assets/thumbnails/project-004.png" alt=""></a>
+              <div class="project-card__tools">
+                <button class="icon-button" type="button" aria-pressed="false" aria-label="Save A share market graph analysing model created using LLMs and business major team members">🔖</button>
+                <button class="icon-button" type="button" aria-label="Share A share market graph analysing model created using LLMs and business major team members">↗</button>
+              </div>
+            </div>
+            <div class="project-card__row">
+              <h3 class="project-card__title"><a href="project.html?id=proj-004">A share market graph analysing model created using LLMs and business major team members</a></h3>
+              <p class="project-card__stats">♡ 64 · 💬 2</p>
+            </div>
+            <p class="project-card__meta">Dyson, Finance</p>
+          </article>
+          <article class="project-card">
+            <div class="project-card__media">
+              <a href="project.html?id=proj-008"><img class="project-card__image" src="assets/thumbnails/project-008.png" alt=""></a>
+              <div class="project-card__tools">
+                <button class="icon-button" type="button" aria-pressed="false" aria-label="Save Study Group Finder">🔖</button>
+                <button class="icon-button" type="button" aria-label="Share Study Group Finder">↗</button>
+              </div>
+            </div>
+            <div class="project-card__row">
+              <h3 class="project-card__title"><a href="project.html?id=proj-008">Study Group Finder</a></h3>
+              <p class="project-card__stats">♡ 105 · 💬 2</p>
+            </div>
+            <p class="project-card__meta">Chris, Education</p>
+          </article>
+          <article class="project-card">
+            <div class="project-card__media">
+              <a href="project.html?id=proj-010"><img class="project-card__image" src="assets/thumbnails/project-010.png" alt=""></a>
+              <div class="project-card__tools">
+                <button class="icon-button" type="button" aria-pressed="false" aria-label="Save Subway Run">🔖</button>
+                <button class="icon-button" type="button" aria-label="Share Subway Run">↗</button>
+              </div>
+            </div>
+            <div class="project-card__row">
+              <h3 class="project-card__title"><a href="project.html?id=proj-010">Subway Run</a></h3>
+              <p class="project-card__stats">♡ 59 · 💬 1</p>
+            </div>
+            <p class="project-card__meta">Marcus, Digital Media</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="site-logo" href="index.html"><img src="assets/images/logo-horizontal.svg" alt="LAGCC STUDIO, home" width="162" height="46"></a>
+      <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="submit.html">Submit a Project</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
   <script src="js/app.js"></script>
 </body>
 </html>
