@@ -49,9 +49,8 @@ img { max-width: 100%; display: block; }
   gap: var(--space-4) var(--space-6);
   padding-block: var(--space-4);
 }
-.site-logo { display: flex; flex-direction: column; line-height: 1.1; color: var(--color-text); text-decoration: none; }
-.site-logo__name { font-size: var(--text-lg); font-weight: 800; letter-spacing: 0.04em; }
-.site-logo__tagline { font-size: 0.625rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-muted); }
+.site-logo { display: block; line-height: 0; }
+.site-logo img { height: 46px; width: auto; }
 .site-nav ul, .site-actions { display: flex; align-items: center; gap: var(--space-4); list-style: none; margin: 0; padding: 0; }
 .site-nav a, .site-actions a:not(.button) { color: var(--color-text); text-decoration: none; font-size: var(--text-sm); }
 .site-search {
