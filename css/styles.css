@@ -39,6 +39,12 @@ img { max-width: 100%; display: block; }
   background: var(--color-bg);
   cursor: pointer;
 }
+.icon-button--plain {
+  display: grid;
+  place-items: center;
+  background: none;
+  color: var(--color-text-muted);   /* the icon takes this color */
+}
 
 /* header */
 .site-header { border-bottom: 1px solid var(--color-border); }
