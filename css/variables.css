@@ -1,1 +1,32 @@
+:root {
+  /* colors */
+  --color-brand-red: #C4262E;
+  --color-bg: #FFFFFF;
+  --color-surface: #F1F1F1;
+  --color-text: #111111;
+  --color-text-muted: #555555;
+  --color-border: #DDDDDD;
+  --color-focus: #1A5FD0;
 
+  /* typography (system fonts until the real ones are confirmed) */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: clamp(1.75rem, 4vw, 3rem); /* grows and shrinks with the screen */
+
+  /* spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 64px;
+
+  /* layout */
+  --container-max: 1440px;
+  --gutter: 16px;
+  --radius: 8px;
+  --radius-card: 12px;
+}
