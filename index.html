@@ -56,7 +56,11 @@
           <button class="chip" type="button" aria-pressed="false">Science</button>
           <button class="chip" type="button" aria-pressed="false">Interactive Media</button>
         </div>
-        <p class="gallery-message" id="gallery-message" role="status" hidden></p>
+        <div class="gallery-message" id="gallery-message" role="status" hidden>
+          <p class="gallery-message__title" id="gallery-message-title"></p>
+          <p id="gallery-message-text"></p>
+          <button class="button button--secondary" type="button" id="gallery-retry" hidden>Try Again</button>
+        </div>
         <div class="project-grid" id="project-grid"></div>
       </div>
     </section>
@@ -91,7 +95,7 @@
           Long Island City, NY 11101<br>
           LaGuardia Community College
         </address>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=31-10+Thompson+Avenue+Long+Island+City+NY+11101">Maps and Directions</a>
+        <a class="footer-link--accent" href="https://www.google.com/maps/search/?api=1&amp;query=31-10+Thompson+Avenue+Long+Island+City+NY+11101">Maps and Directions</a>
       </section>
 
       <section class="footer-col" aria-labelledby="footer-links">
