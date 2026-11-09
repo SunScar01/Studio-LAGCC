@@ -31,7 +31,7 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="container">
         <h1>Next generations <span class="hero__accent">of Creators are at</span> LaGuardia</h1>
         <p>Curate portfolios and innovative projects from the creative minds at LaGuardia.</p>
@@ -56,13 +56,13 @@
           <button class="chip" type="button" aria-pressed="false">Science</button>
           <button class="chip" type="button" aria-pressed="false">Interactive Media</button>
         </div>
-        <div class="gallery-message" id="gallery-message" role="status" hidden>
-          <p class="gallery-message__title" id="gallery-message-title"></p>
-          <p id="gallery-message-text"></p>
-          <button class="button button--secondary" type="button" id="gallery-retry" hidden>Try Again</button>
-        </div>
         <div class="project-grid" id="project-grid"></div>
       </div>
+    </section>
+      <section class="page-message" id="gallery-message" role="status" hidden>
+      <p class="page-message__title" id="gallery-message-title"></p>
+      <p id="gallery-message-text"></p>
+      <button class="button button--secondary" type="button" id="gallery-retry" hidden>Try Again</button>
     </section>
   </main>
 
