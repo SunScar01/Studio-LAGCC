@@ -69,11 +69,18 @@
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .project-card__meta { margin: var(--space-1) 0 0; font-size: var(--text-sm); color: var(--color-text-muted); }
 
-/* message shown instead of the cards (error or no data) */
-.gallery-message { padding: var(--space-12) var(--space-4); text-align: center; }
-.gallery-message[hidden] { display: none; }
-.gallery-message p { margin: 0 0 var(--space-4); }
-.gallery-message__title { font-weight: 700; }
+/* full-page message (error or no data): fills the space between header and footer */
+.page-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: var(--space-12) var(--gutter);
+  text-align: center;
+}
+.page-message p { margin: 0 0 var(--space-4); }
+.page-message__title { font-weight: 700; }
 
 /* gray button, used for "Try Again" */
 .button--secondary {
