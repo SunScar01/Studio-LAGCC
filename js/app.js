@@ -30,11 +30,15 @@ function showMessage(title, text, canRetry) {
   document.getElementById("gallery-message-title").textContent = title;
   document.getElementById("gallery-message-text").textContent = text;
   document.getElementById("gallery-retry").hidden = !canRetry;
+  document.getElementById("hero").hidden = true;        // the message replaces the whole page
+  document.getElementById("projects").hidden = true;
   document.getElementById("gallery-message").hidden = false;
 }
 
 function hideMessage() {
   document.getElementById("gallery-message").hidden = true;
+  document.getElementById("hero").hidden = false;
+  document.getElementById("projects").hidden = false;
 }
 
 async function init() {
