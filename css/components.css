@@ -70,5 +70,18 @@
 .project-card__meta { margin: var(--space-1) 0 0; font-size: var(--text-sm); color: var(--color-text-muted); }
 
 /* message shown instead of the cards (error or no data) */
-.gallery-message { padding: var(--space-12) var(--space-4); text-align: center; color: var(--color-text-muted); }
+.gallery-message { padding: var(--space-12) var(--space-4); text-align: center; }
 .gallery-message[hidden] { display: none; }
+.gallery-message p { margin: 0 0 var(--space-4); }
+.gallery-message__title { font-weight: 700; }
+
+/* gray button, used for "Try Again" */
+.button--secondary {
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--color-border);
+  color: var(--color-text);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
