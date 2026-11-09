@@ -99,3 +99,4 @@ img { max-width: 100%; display: block; }
 .footer-col a:not(.button):hover { text-decoration: underline; }
 .footer-address { margin-bottom: var(--space-3); font-style: normal; font-size: var(--text-sm); color: var(--color-text-muted); }
 .footer-col p { margin: 0 0 var(--space-4); font-weight: 600; }
+.footer-col a.footer-link--accent { color: var(--color-brand-red); }
