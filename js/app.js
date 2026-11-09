@@ -26,26 +26,35 @@ function renderProjects(projects) {
   }
 }
 
-function showMessage(text) {
-  const message = document.getElementById("gallery-message");
-  message.textContent = text;
-  message.hidden = false;
+function showMessage(title, text, canRetry) {
+  document.getElementById("gallery-message-title").textContent = title;
+  document.getElementById("gallery-message-text").textContent = text;
+  document.getElementById("gallery-retry").hidden = !canRetry;
+  document.getElementById("gallery-message").hidden = false;
+}
+
+function hideMessage() {
+  document.getElementById("gallery-message").hidden = true;
 }
 
 async function init() {
+  hideMessage();
+
   try {
     const projects = await loadProjects();
 
     if (!Array.isArray(projects) || projects.length === 0) {
-      showMessage("No projects to show yet. Please check back soon.");
+      showMessage("No projects found.", "Please check back soon.", false);
       return;
     }
 
     renderProjects(projects);
   } catch (error) {
     console.error(error);
-    showMessage("Sorry, we couldn't load the projects. Please try again later.");
+    showMessage("Something went wrong.", "We couldn't load the projects right now.", true);
   }
 }
+
+document.getElementById("gallery-retry").addEventListener("click", init);
 
 init();
