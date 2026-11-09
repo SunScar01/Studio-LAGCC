@@ -26,12 +26,25 @@ function renderProjects(projects) {
   }
 }
 
+function showMessage(text) {
+  const message = document.getElementById("gallery-message");
+  message.textContent = text;
+  message.hidden = false;
+}
+
 async function init() {
   try {
     const projects = await loadProjects();
+
+    if (!Array.isArray(projects) || projects.length === 0) {
+      showMessage("No projects to show yet. Please check back soon.");
+      return;
+    }
+
     renderProjects(projects);
   } catch (error) {
     console.error(error);
+    showMessage("Sorry, we couldn't load the projects. Please try again later.");
   }
 }
 
