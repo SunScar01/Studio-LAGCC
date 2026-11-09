@@ -11,6 +11,8 @@ body {
 
 img { max-width: 100%; display: block; }
 
+[hidden] { display: none !important; }
+
 :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
 
 /* centered, never wider than 1440px, shrinks on small screens */
