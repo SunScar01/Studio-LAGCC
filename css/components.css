@@ -112,3 +112,12 @@
 .profile-projects { padding-block: var(--space-8); }
 .profile-projects h2 { margin: 0 0 var(--space-6); font-size: var(--text-xl); }
 .count { margin-left: var(--space-1); font-size: var(--text-base); font-weight: 400; color: var(--color-text-muted); }
+
+/* dark theme touch-ups */
+[data-theme="dark"] .button--dark { background: #fff; color: #000; }
+.logo--dark { display: none; }
+[data-theme="dark"] .logo--light { display: none; }
+[data-theme="dark"] .logo--dark { display: block; }
+[data-theme="dark"] .project-card__tools .icon-button { background: #fff; }   /* keep the white circles on top of thumbnails */
+[data-theme="dark"] .footer-social img { filter: brightness(0) invert(1); }   /* Figma shows white social icons in dark */
+[data-theme="dark"] .footer-col a:not(.button):not(.footer-link--accent) { color: var(--color-text-muted); }
