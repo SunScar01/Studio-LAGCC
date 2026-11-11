@@ -3,6 +3,7 @@
     "id": "proj-001",
     "title": "Puzzle Game",
     "creator": "Jason",
+    "creatorEmail": "jason@example.com",
     "major": "Software Development",
     "category": "Game Design",
     "tools": [
@@ -45,6 +46,7 @@
     "id": "proj-002",
     "title": "Game Character-Promton",
     "creator": "Jessica",
+    "creatorEmail": "jessica@example.com",
     "major": "Arts",
     "category": "Art & Design",
     "tools": [
@@ -73,6 +75,7 @@
     "id": "proj-003",
     "title": "Antivirus Software",
     "creator": "Tylor",
+    "creatorEmail": "tylor@example.com",
     "major": "Computer Science",
     "category": "Technology",
     "tools": [
@@ -96,6 +99,7 @@
     "id": "proj-004",
     "title": "A share market graph analysing model created using LLMs and business major team members",
     "creator": "Dyson",
+    "creatorEmail": "dyson@example.com",
     "major": "Finance",
     "category": "Finance",
     "tools": [
@@ -129,6 +133,7 @@
     "id": "proj-005",
     "title": "Solar-Powered Phone Charger",
     "creator": "Maria",
+    "creatorEmail": "maria@example.com",
     "major": "Mechanical Engineering",
     "category": "Engineering",
     "tools": [
@@ -149,6 +154,7 @@
     "id": "proj-006",
     "title": "Campus Coffee Cart Business Plan",
     "creator": "Omar",
+    "creatorEmail": "omar@example.com",
     "major": "Business Administration",
     "category": "Business",
     "tools": [
@@ -169,6 +175,7 @@
     "id": "proj-007",
     "title": "Public Health Poster Series",
     "creator": "Priya",
+    "creatorEmail": "priya@example.com",
     "major": "Nursing",
     "category": "Healthcare",
     "tools": [
@@ -188,6 +195,7 @@
     "id": "proj-008",
     "title": "Study Group Finder",
     "creator": "Chris",
+    "creatorEmail": "chris@example.com",
     "major": "Education",
     "category": "Education",
     "tools": [
@@ -222,6 +230,7 @@
     "id": "proj-009",
     "title": "Smart Plant Watering System",
     "creator": "Lena",
+    "creatorEmail": "lena@example.com",
     "major": "Biology",
     "category": "Science",
     "tools": [
@@ -242,6 +251,7 @@
     "id": "proj-010",
     "title": "Subway Run",
     "creator": "Marcus",
+    "creatorEmail": "marcus@example.com",
     "major": "Digital Media",
     "category": "Interactive Media",
     "tools": [
