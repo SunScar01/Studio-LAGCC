@@ -31,6 +31,7 @@ applyTheme(getStartTheme());                      // runs immediately
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("theme-toggle");
   applyTheme(getStartTheme());                    // now the button exists, so update its icon and label
+  if (!button) return;                            // pages without a toggle (login, sign up)
   button.addEventListener("click", function () {
     const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
     try {
