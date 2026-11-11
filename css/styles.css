@@ -97,6 +97,7 @@ img { max-width: 100%; display: block; }
 .footer-col__title--brand { text-transform: none; }
 .footer-col ul { display: grid; gap: var(--space-3); list-style: none; margin: 0; padding: 0; }
 .footer-col .footer-social { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-4); }
+.footer-social img { display: block; }
 .footer-col a:not(.button) { color: var(--color-text); font-size: var(--text-sm); text-decoration: none; }
 .footer-col a:not(.button):hover { text-decoration: underline; }
 .footer-address { margin-bottom: var(--space-3); font-style: normal; font-size: var(--text-sm); color: var(--color-text-muted); }
