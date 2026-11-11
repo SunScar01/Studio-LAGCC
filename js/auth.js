@@ -87,6 +87,11 @@ function setupHeaderLink() {
   if (!link) return;
   const user = getUser();
   if (user) {
+    const cta = document.getElementById("header-cta");   // signed in, so Sign Up becomes Submit
+    if (cta) {
+      cta.textContent = "Submit";
+      cta.href = "submit.html";
+    }
     link.textContent = "Log Out";
     link.title = "Signed in as " + user.email;
     link.addEventListener("click", function (event) {
