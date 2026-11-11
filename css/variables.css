@@ -30,3 +30,14 @@
   --radius: 8px;
   --radius-card: 12px;
 }
+
+/* dark theme: theme.js sets data-theme="dark" on <html>. Colors sampled from the Figma dark frames. */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #1E1E1E;
+  --color-surface: #333333;
+  --color-text: #F1F1F1;
+  --color-text-muted: #949494;
+  --color-border: #3A3A3A;   /* not visible in the Figma frames, so this is our guess */
+  --color-focus: #7AB0FF;
+}
