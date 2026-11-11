@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In | LAGCC STUDIO</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script src="js/theme.js"></script>
+</head>
+<body class="auth-page">
+  <header class="container auth-header">
+    <a class="site-logo" href="index.html"><img class="logo--light" src="assets/images/logo-horizontal.svg" alt="LAGCC STUDIO, home" width="162" height="46"><img class="logo--dark" src="assets/images/logo-horizontal-dark.svg" alt="LAGCC STUDIO, home" width="162" height="46"></a>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-card" aria-labelledby="auth-title">
+      <h1 class="auth-title" id="auth-title"><span>Welcome to</span> <span>LAGCC STUDIO!</span></h1>
+      <form class="auth-form" id="login-form" novalidate>
+        <p class="auth-lead">Sign In with your email:</p>
+        <div class="auth-field">
+          <label class="visually-hidden" for="email">Email</label>
+          <div class="auth-input-wrap">
+          <input class="auth-input" id="email" name="email" type="email" placeholder="Email" autocomplete="email" aria-describedby="email-error" required>
+          </div>
+          <p class="auth-error" id="email-error" role="alert" hidden></p>
+        </div>
+        <div class="auth-field">
+          <label class="visually-hidden" for="password">Password</label>
+          <div class="auth-input-wrap">
+          <input class="auth-input" id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" aria-describedby="password-error" required>
+          <button class="auth-show" type="button" data-show-for="password" aria-label="Show password">Show</button>
+          </div>
+          <p class="auth-error" id="password-error" role="alert" hidden></p>
+        </div>
+        <label class="auth-remember"><input type="checkbox" id="remember"> Remember me every time I visit</label>
+        <button class="auth-submit" type="submit">Sign In</button>
+      </form>
+      <p class="auth-or"><span>or</span></p>
+      <a class="auth-secondary" href="signup.html">Create an Account</a>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
