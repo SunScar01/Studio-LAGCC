@@ -1,31 +1,3 @@
-function renderProjects(projects) {
-  const grid = document.getElementById("project-grid");
-  const template = document.getElementById("project-card-template");
-
-  grid.innerHTML = "";                                 
-
-  for (const project of projects) {
-    const card = template.content.cloneNode(true);     
-    const url = "project.html?id=" + project.id;
-
-    const image = card.querySelector(".project-card__image");
-    image.src = project.thumbnail;
-    image.onerror = () => { image.src = "assets/images/no-image.svg"; };
-
-    const title = card.querySelector(".project-card__title a");
-    title.textContent = project.title;
-    title.href = url;
-
-    card.querySelector(".project-card__meta").textContent =
-      project.creator + ", " + project.major;
-
-    card.querySelector(".js-likes").textContent = project.likes;
-    card.querySelector(".js-comments").textContent = (project.comments || []).length;
-
-    grid.appendChild(card);                           
-  }
-}
-
 function showMessage(title, text, canRetry) {
   document.getElementById("gallery-message-title").textContent = title;
   document.getElementById("gallery-message-text").textContent = text;
@@ -52,7 +24,7 @@ async function init() {
       return;
     }
 
-    renderProjects(projects);
+    renderProjects(projects, document.getElementById("project-grid"));
   } catch (error) {
     console.error(error);
     showMessage("Something went wrong.", "We couldn't load the projects right now.", true);
