@@ -187,3 +187,86 @@
 .profile-tab { padding: var(--space-2) 0; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--color-text-muted); font: inherit; font-size: var(--text-xl); font-weight: 700; cursor: pointer; }
 .profile-tab[aria-selected="true"] { border-bottom-color: var(--color-text); color: var(--color-text); }
 .profile-tab .count { margin-left: var(--space-1); }
+
+/* ---------- hover and focus effects (from the Figma prototype) ---------- */
+
+/* nav and header links: red + underline (the underline means it is not color alone) */
+.site-nav a, .site-actions a:not(.button), .link-arrow, .footer-col a:not(.button):not(.footer-link--accent), .chip, .profile-tab {
+  transition: color var(--transition), border-color var(--transition);
+}
+.site-nav a:hover, .site-nav a:focus-visible,
+.site-actions a:not(.button):hover, .site-actions a:not(.button):focus-visible {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+.link-arrow:hover, .footer-col a:not(.button):hover { color: var(--color-link-hover); }
+.chip:hover { color: var(--color-text); border-bottom-color: var(--color-border); }
+.chip[aria-pressed="true"]:hover { border-bottom-color: var(--color-brand-red); }
+.profile-tab:hover { color: var(--color-text); }
+
+/* buttons: darker red */
+.button, .auth-submit { transition: background-color var(--transition); }
+.button:hover, .auth-submit:hover { background: var(--color-brand-red-hover); filter: none; }
+.button--secondary:hover { background: var(--color-border); filter: brightness(0.94); }
+.button--dark:hover { background: #333; }
+[data-theme="dark"] .button--dark:hover { background: #ddd; }
+
+/* small round buttons */
+.icon-button { transition: transform var(--transition), background-color var(--transition), color var(--transition); }
+.icon-button--plain:hover { color: var(--color-text); }
+.project-card__tools .icon-button:hover { transform: scale(1.1); background: #F1F1F1; }
+.header-avatar { transition: opacity var(--transition); }
+.header-avatar:hover { opacity: 0.8; }
+.site-search { transition: background-color var(--transition); }
+.site-search:hover { background: var(--color-border); }
+.footer-social img { transition: transform var(--transition); }
+.footer-social a:hover img { transform: scale(1.15); }
+.new-project-tile, .auth-secondary { transition: background-color var(--transition); }
+
+/* project cards: image zooms inside its frame, title turns red, buttons appear */
+.project-card__media > a { display: block; overflow: hidden; border-radius: var(--radius-card); }
+.project-card__image { transition: transform 0.3s ease; }
+.project-card:hover .project-card__image, .project-card:focus-within .project-card__image { transform: scale(1.05); }
+.project-card__title a { transition: color var(--transition); }
+.project-card:hover .project-card__title a, .project-card:focus-within .project-card__title a { color: var(--color-link-hover); }
+
+.project-card__tools { opacity: 0; transition: opacity var(--transition); }
+.project-card:hover .project-card__tools,
+.project-card:focus-within .project-card__tools,
+.project-card:has([aria-pressed="true"]) .project-card__tools { opacity: 1; }   /* a saved card keeps its buttons */
+@media (hover: none) { .project-card__tools { opacity: 1; } }                      /* phones have no hover */
+
+/* people who ask their system for less motion get no animation */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; }
+  .project-card:hover .project-card__image, .project-card:focus-within .project-card__image,
+  .footer-social a:hover img, .project-card__tools .icon-button:hover { transform: none; }
+}
+
+/* ---------- hero (new design) ---------- */
+.hero__badge { display: inline-flex; align-items: center; gap: var(--space-3); margin: var(--space-6) 0 var(--space-6); padding: var(--space-2) var(--space-6); border: 1px solid color-mix(in srgb, var(--color-brand-red) 30%, transparent); border-radius: 999px; background: color-mix(in srgb, var(--color-brand-red) 8%, transparent); color: var(--color-brand-red); font-weight: 600; }
+[data-theme="dark"] .hero__badge { color: var(--color-link-hover); }
+.hero__badge-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-brand-red); }
+.hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-4); margin-bottom: var(--space-12); }
+.hero__actions svg { width: 20px; height: 20px; flex: none; }
+.hero__submit, .hero__learn { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-8); border-radius: 999px; font-weight: 600; text-decoration: none; }
+.hero__learn { border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text); transition: background-color var(--transition), border-color var(--transition); }
+.hero__learn svg { color: var(--color-brand-red); }
+.hero__learn:hover { border-color: var(--color-brand-red); }
+
+.hero-stats { display: flex; flex-wrap: wrap; justify-content: center; width: fit-content; max-width: 100%; margin: 0 auto; padding: var(--space-4) var(--space-8); list-style: none; background: var(--color-bg); border-radius: 999px; text-align: left; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); }
+.hero-stat { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) var(--space-8); }
+.hero-stat + .hero-stat { border-left: 1px solid var(--color-border); }
+.hero-stat:first-child { flex-direction: column; align-items: flex-start; gap: 0; }
+.hero-stat__body { display: flex; flex-direction: column; }
+.hero-stat > svg { width: 28px; height: 28px; flex: none; color: var(--color-brand-red); }
+.hero-stat__label { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); letter-spacing: 0.03em; text-transform: uppercase; color: var(--color-text-muted); }
+.hero-stat__dot { width: 10px; height: 10px; border-radius: 50%; background: #16A34A; }
+.hero-stat__value { font-size: var(--text-lg); font-weight: 700; color: var(--color-text); }
+@media (max-width: 760px) {
+  .hero-stats { flex-direction: column; align-items: stretch; width: 100%; border-radius: var(--radius-card); }
+  .hero-stat + .hero-stat { border-left: 0; border-top: 1px solid var(--color-border); }
+}
+.site-nav a[aria-current="page"] { font-weight: 600; }
