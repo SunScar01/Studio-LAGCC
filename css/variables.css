@@ -7,6 +7,11 @@
   --color-text-muted: #63666A;
   --color-border: #DDDDDD;
   --color-focus: #1A5FD0;
+  --color-brand-red-hover: #A80D26;   /* darker red for button hover */
+  --color-link-hover: #C8102E;        /* text turns red on hover */
+  --transition: 0.18s ease;
+  --hero-from: #EFE2E2;               /* hero gradient, top to bottom */
+  --hero-to: #DFE2EE;
 
   /* typography (system fonts until the real ones are confirmed) */
   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -40,4 +45,8 @@
   --color-text-muted: #949494;
   --color-border: #3A3A3A;   /* not visible in the Figma frames, so this is our guess */
   --color-focus: #7AB0FF;
+  --color-brand-red-hover: #E02344;   /* lighter in dark mode so it stays visible */
+  --hero-from: #2A1E21;
+  --hero-to: #1F2230;
+  --color-link-hover: #FF7A8A;        /* the brand red is too dark to read as text on dark */
 }
