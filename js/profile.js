@@ -59,3 +59,10 @@ async function initProfile() {
 document.getElementById("profile-retry").addEventListener("click", initProfile);
 
 initProfile();
+
+// The search bar is on every page: here, pressing Enter sends the search to the gallery
+document.getElementById("site-search").addEventListener("keydown", function (event) {
+  if (event.key === "Enter" && event.target.value.trim() !== "") {
+    window.location.href = "index.html?q=" + encodeURIComponent(event.target.value.trim());
+  }
+});
