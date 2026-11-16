@@ -11,11 +11,26 @@ function getUser() {
 }
 
 function saveUser(email, remember) {
-  const user = { email: email, name: email.split("@")[0] };
+  const prefix = email.split("@")[0];
+  const user = { email: email, name: prefix.charAt(0).toUpperCase() + prefix.slice(1) };   // jason@... -> Jason
   const store = remember ? localStorage : sessionStorage;   // "remember me" = keep after the tab closes
   localStorage.removeItem(USER_KEY);
   sessionStorage.removeItem(USER_KEY);
   store.setItem(USER_KEY, JSON.stringify(user));
+}
+
+function updateUser(changes) {
+  const user = getUser();
+  if (!user) return null;
+  const merged = Object.assign({}, user, changes);
+  const store = localStorage.getItem(USER_KEY) ? localStorage : sessionStorage;   // same place it was saved
+  try {
+    store.setItem(USER_KEY, JSON.stringify(merged));
+  } catch (error) {
+    console.error(error);                                                         // storage full or blocked
+    return null;
+  }
+  return merged;
 }
 
 function clearUser() {
@@ -81,11 +96,24 @@ function setupSignup(form) {
   });
 }
 
+// Header: signed-in people get a profile icon (their photo if they set one)
+function renderHeaderProfile(user) {
+  const profileLink = document.getElementById("profile-link");
+  if (!profileLink) return;
+  profileLink.hidden = !user;
+  if (!user) return;
+  const image = document.getElementById("header-avatar-img");
+  image.hidden = !user.avatar;
+  if (user.avatar) image.src = user.avatar;
+  profileLink.querySelector(".avatar-icon").hidden = Boolean(user.avatar);
+}
+
 // On every page: the header link says Log In, or Log Out when someone is signed in
 function setupHeaderLink() {
   const link = document.getElementById("auth-link");
   if (!link) return;
   const user = getUser();
+  renderHeaderProfile(user);
   if (user) {
     const cta = document.getElementById("header-cta");   // signed in, so Sign Up becomes Submit
     if (cta) {
