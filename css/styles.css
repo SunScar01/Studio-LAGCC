@@ -80,10 +80,10 @@ img { max-width: 100%; display: block; }
 }
 
 /* hero */
-.hero { padding-block: var(--space-12); text-align: center; }
-.hero h1 { max-width: 14em; margin: 0 auto var(--space-4); font-size: var(--text-xl); line-height: 1.15; }
+.hero { padding-block: var(--space-12) calc(var(--space-12) * 1.5); text-align: center; background: linear-gradient(to bottom, var(--hero-from), var(--hero-to)); }
+.hero h1 { max-width: 14.5em; margin: 0 auto var(--space-6); font-size: clamp(2.25rem, 4.4vw, 3.5rem); line-height: 1.12; }
 .hero__accent { color: var(--color-brand-red); }
-.hero p { max-width: 40ch; margin: 0 auto var(--space-6); color: var(--color-text-muted); }
+.hero__text { max-width: 30em; margin: 0 auto var(--space-8); font-size: 1.0625rem; line-height: 1.6; color: var(--color-text-muted); }
 .link-arrow { margin-left: var(--space-4); color: var(--color-text); }
 
 /* sections */
