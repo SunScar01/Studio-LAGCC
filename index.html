@@ -15,7 +15,8 @@
       <a class="site-logo" href="index.html"><img class="logo--light" src="assets/images/logo-horizontal.svg" alt="LAGCC STUDIO, home" width="162" height="46"><img class="logo--dark" src="assets/images/logo-horizontal-dark.svg" alt="LAGCC STUDIO, home" width="162" height="46"></a>
       <nav class="site-nav" aria-label="Main">
         <ul>
-          <li><a href="index.html">Explore</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="index.html#projects">Explore</a></li>
           <li><a href="index.html">Collections</a></li>
           <li><a href="index.html">About</a></li>
         </ul>
@@ -27,7 +28,7 @@
           <svg class="icon-sun" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" hidden><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </button>
         <a class="header-avatar" id="profile-link" href="my-profile.html" aria-label="Your profile" hidden><svg class="avatar-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="8.5" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg><img id="header-avatar-img" src="" alt="" hidden></a>
-        <a href="login.html" id="auth-link">Log In</a>
+        <a href="login.html" id="auth-link">Log in</a>
         <a class="button" href="signup.html" id="header-cta">Sign Up</a>
       </div>
     </div>
@@ -36,10 +37,27 @@
   <main>
     <section class="hero" id="hero">
       <div class="container">
+        <p class="hero__badge"><span class="hero__badge-dot" aria-hidden="true"></span>Annual Spring Showcase &#8216;26 is Now Live</p>
         <h1>Next generations <span class="hero__accent">of Creators are at</span> LaGuardia</h1>
-        <p>Curate portfolios and innovative projects from the creative minds at LaGuardia.</p>
-        <a class="button" href="submit.html">Start project</a>
-        <a class="link-arrow" href="#projects">View →</a>
+        <p class="hero__text">The authoritative agency catalog bridging student brilliance with industry talent seekers. Explore groundbreaking capstones, interactive games, and design systems from Queens to the world.</p>
+        <div class="hero__actions">
+          <a class="button hero__submit" href="submit.html">Submit Project <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 16V4m0 0L7 9m5-5 5 5M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="hero__learn" href="#projects"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2.5" stroke="currentColor" stroke-width="2"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 13h18M12 12v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Learn More</a>
+        </div>
+        <ul class="hero-stats" aria-label="STUDIO at a glance">
+          <li class="hero-stat">
+            <span class="hero-stat__label"><span class="hero-stat__dot" aria-hidden="true"></span>Active Projects</span>
+            <span class="hero-stat__value">1,200+</span>
+          </li>
+          <li class="hero-stat hero-stat--icon">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5zM6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="hero-stat__body"><span class="hero-stat__label">Disciplines</span><span class="hero-stat__value">32 Majors</span></span>
+          </li>
+          <li class="hero-stat hero-stat--icon">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M9 7.5h.01M15 7.5h.01M9 11.5h.01M15 11.5h.01M10 21v-4h4v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="hero-stat__body"><span class="hero-stat__label">Industry Partners</span><span class="hero-stat__value">85+ Tech &amp; Design</span></span>
+          </li>
+        </ul>
       </div>
     </section>
 
