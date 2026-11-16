@@ -65,10 +65,23 @@
           <p class="auth-error" id="my-profile-error" role="alert" hidden></p>
         </div>
 
-        <section class="profile-projects" aria-labelledby="my-projects-title">
-          <h2 id="my-projects-title">Projects <span class="count count--red" id="my-count"></span></h2>
+        <div class="profile-tabs" role="tablist" aria-label="Your profile">
+          <button class="profile-tab" type="button" role="tab" id="tab-projects" aria-selected="true" aria-controls="panel-projects">Projects <span class="count count--red" id="my-count"></span></button>
+          <button class="profile-tab" type="button" role="tab" id="tab-saved" aria-selected="false" aria-controls="panel-saved" tabindex="-1">Saved <span class="count" id="saved-count"></span></button>
+        </div>
+
+        <div class="profile-projects" role="tabpanel" id="panel-projects" aria-labelledby="tab-projects">
           <div class="project-grid" id="project-grid"></div>
-        </section>
+        </div>
+
+        <div class="profile-projects" role="tabpanel" id="panel-saved" aria-labelledby="tab-saved" hidden>
+          <div class="project-grid" id="saved-grid"></div>
+          <div class="no-results" id="saved-empty" hidden>
+            <p class="no-results__title">Nothing saved yet.</p>
+            <p>Tap the bookmark on any project and it will show up here.</p>
+            <a class="button" href="index.html">Browse projects</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -142,6 +155,7 @@
   </footer>
   <script src="js/auth.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/bookmarks.js"></script>
   <script src="js/cards.js"></script>
   <script src="js/my-profile.js"></script>
 </body>
