@@ -177,3 +177,13 @@
 .count--red { color: var(--color-brand-red); font-size: var(--text-lg); font-weight: 700; }
 .new-project-tile { display: grid; place-items: center; min-height: 200px; border: 2px dashed var(--color-text-muted); border-radius: var(--radius-card); color: var(--color-text); font-size: var(--text-lg); text-decoration: none; }
 .new-project-tile:hover { background: var(--color-surface); }
+
+/* bookmark button: filled when saved */
+.icon-button[aria-pressed="true"] { color: var(--color-brand-red); }
+.icon-button[aria-pressed="true"] svg path { fill: currentColor; }
+
+/* Projects | Saved tabs on your profile */
+.profile-tabs { display: flex; gap: var(--space-6); margin-bottom: var(--space-6); border-bottom: 1px solid var(--color-border); }
+.profile-tab { padding: var(--space-2) 0; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--color-text-muted); font: inherit; font-size: var(--text-xl); font-weight: 700; cursor: pointer; }
+.profile-tab[aria-selected="true"] { border-bottom-color: var(--color-text); color: var(--color-text); }
+.profile-tab .count { margin-left: var(--space-1); }
