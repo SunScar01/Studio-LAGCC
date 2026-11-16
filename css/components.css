@@ -150,3 +150,7 @@
 .auth-secondary:hover { background: var(--color-surface); }
 .auth-switch { max-width: 566px; margin: var(--space-6) auto 0; text-align: center; font-size: var(--text-sm); }
 .auth-switch a { color: var(--color-brand-red); font-weight: 600; }
+
+/* search / filter: nothing matched */
+.no-results { padding-block: var(--space-12); text-align: center; }
+.no-results__title { margin: 0 0 var(--space-2); font-size: var(--text-lg); font-weight: 600; }
