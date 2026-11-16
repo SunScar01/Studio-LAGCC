@@ -114,17 +114,22 @@ function setupAvatarEdit() {
   });
 }
 
-async function renderMyProjects(user) {
-  const grid = document.getElementById("project-grid");
-  let mine = [];
+let allProjects = [];
+
+async function loadAll() {
   try {
-    const all = await loadProjects();
-    mine = all.filter(function (project) {
-      return project.creator.toLowerCase() === user.name.toLowerCase();
-    });
+    allProjects = await loadProjects();
   } catch (error) {
-    console.error(error);                          // show the empty page with the new-project tile
+    console.error(error);                          // the page still works, just with no cards
+    allProjects = [];
   }
+}
+
+function renderMyProjects(user) {
+  const grid = document.getElementById("project-grid");
+  const mine = allProjects.filter(function (project) {
+    return project.creator.toLowerCase() === user.name.toLowerCase();
+  });
   renderProjects(mine, grid);
   document.getElementById("my-count").textContent = mine.length;
 
@@ -135,7 +140,43 @@ async function renderMyProjects(user) {
   grid.appendChild(tile);
 }
 
-function initMe() {
+function renderSaved() {
+  const ids = getBookmarks();
+  const saved = ids
+    .map(function (id) { return allProjects.find(function (project) { return project.id === id; }); })
+    .filter(Boolean)                               // ignore ids that no longer exist
+    .reverse();                                    // newest saved first
+  renderProjects(saved, document.getElementById("saved-grid"));
+  document.getElementById("saved-count").textContent = saved.length;
+  document.getElementById("saved-empty").hidden = saved.length > 0;
+}
+
+// Tabs: Projects | Saved. Arrow keys move between them.
+function selectTab(name) {
+  for (const tab of document.querySelectorAll(".profile-tab")) {
+    const active = tab.id === "tab-" + name;
+    tab.setAttribute("aria-selected", String(active));
+    tab.tabIndex = active ? 0 : -1;
+    document.getElementById(tab.getAttribute("aria-controls")).hidden = !active;
+  }
+  if (name === "saved") renderSaved();             // refresh, so unsaved ones disappear
+  history.replaceState(null, "", name === "saved" ? "#saved" : window.location.pathname);
+}
+
+function setupTabs() {
+  const tabs = [...document.querySelectorAll(".profile-tab")];
+  tabs.forEach(function (tab, index) {
+    tab.addEventListener("click", function () { selectTab(tab.id.replace("tab-", "")); });
+    tab.addEventListener("keydown", function (event) {
+      if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
+      const next = tabs[(index + (event.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+      next.focus();
+      selectTab(next.id.replace("tab-", ""));
+    });
+  });
+}
+
+async function initMe() {
   const user = getUser();
   if (!user) {
     showMyMessage();
@@ -146,7 +187,11 @@ function initMe() {
   setupTextEdit("name", "my-name", "name-input", "edit-name", true);
   setupTextEdit("major", "my-major", "major-input", "edit-major", false);
   setupAvatarEdit();
+  setupTabs();
+  await loadAll();
   renderMyProjects(user);
+  renderSaved();                                   // fills the Saved count
+  if (window.location.hash === "#saved") selectTab("saved");
 }
 
 document.getElementById("site-search").addEventListener("keydown", function (event) {
