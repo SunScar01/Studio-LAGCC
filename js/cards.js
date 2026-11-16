@@ -1,4 +1,5 @@
-// Draws project cards into a grid. Used by the gallery (app.js) and the profile page (profile.js).
+// Draws project cards into a grid. Used by the gallery (app.js) and the profile pages.
+// Needs bookmarks.js loaded first.
 function renderProjects(projects, grid) {
   const template = document.getElementById("project-card-template");
 
@@ -7,6 +8,14 @@ function renderProjects(projects, grid) {
   for (const project of projects) {
     const card = template.content.cloneNode(true);      // copy the blueprint
     const url = "project.html?id=" + encodeURIComponent(project.id);
+
+    card.querySelector(".project-card__media > a").href = url;
+
+    const saveButton = card.querySelector(".project-card__tools .icon-button[aria-pressed]");
+    saveButton.setAttribute("aria-pressed", String(isBookmarked(project.id)));
+    saveButton.addEventListener("click", function () {
+      saveButton.setAttribute("aria-pressed", String(toggleBookmark(project.id)));
+    });
 
     const image = card.querySelector(".project-card__image");
     image.src = project.thumbnail;
