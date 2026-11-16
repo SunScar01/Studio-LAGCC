@@ -120,7 +120,7 @@ function setupHeaderLink() {
       cta.textContent = "Submit";
       cta.href = "submit.html";
     }
-    link.textContent = "Log Out";
+    link.textContent = "Log out";
     link.title = "Signed in as " + user.email;
     link.addEventListener("click", function (event) {
       event.preventDefault();
