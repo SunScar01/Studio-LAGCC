@@ -10,6 +10,7 @@
   --color-brand-red-hover: #A80D26;   /* darker red for button hover */
   --color-link-hover: #C8102E;        /* text turns red on hover */
   --transition: 0.18s ease;
+  --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.06);
   --hero-from: #EFE2E2;               /* hero gradient, top to bottom */
   --hero-to: #DFE2EE;
 
