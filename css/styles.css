@@ -51,6 +51,7 @@ img { max-width: 100%; display: block; }
 /* header */
 .site-header { border-bottom: 1px solid var(--color-border); }
 .site-header__inner {
+  max-width: var(--header-max);
   display: flex;
   flex-wrap: wrap;            /* items drop to a new row on small screens */
   align-items: center;
