@@ -23,3 +23,16 @@ function filterProjects(projects, category, query) {
     return matchesCategory(project, category) && matchesQuery(project, query);
   });
 }
+
+// Returns a sorted copy. "Trending" uses likes for now (we have no weekly numbers).
+function sortProjects(projects, mode) {
+  const copy = projects.slice();
+  if (mode === "newest") {
+    copy.sort(function (a, b) { return b.date.localeCompare(a.date); });          // dates are YYYY-MM-DD
+  } else if (mode === "comments") {
+    copy.sort(function (a, b) { return (b.comments || []).length - (a.comments || []).length; });
+  } else {
+    copy.sort(function (a, b) { return b.likes - a.likes; });
+  }
+  return copy;
+}
