@@ -32,6 +32,7 @@
 
   /* layout */
   --container-max: 1440px;
+  --header-max: 1200px;         /* the top bar is narrower than the page */
   --gutter: 16px;
   --radius: 8px;
   --radius-card: 12px;
