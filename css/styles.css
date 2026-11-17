@@ -1,3 +1,12 @@
+/* Overpass, the font used in the Figma designs. One variable file covers every weight. */
+@font-face {
+  font-family: "Overpass";
+  src: url("../assets/fonts/overpass-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
@@ -51,7 +60,6 @@ img { max-width: 100%; display: block; }
 /* header */
 .site-header { border-bottom: 1px solid var(--color-border); }
 .site-header__inner {
-  max-width: var(--header-max);
   display: flex;
   flex-wrap: wrap;            /* items drop to a new row on small screens */
   align-items: center;
