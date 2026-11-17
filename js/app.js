@@ -16,16 +16,21 @@ function hideMessage() {
 let allProjects = [];
 let currentCategory = "All";
 let currentQuery = "";
+let currentSort = "trending";
+const PAGE_SIZE = 8;
+let visibleCount = PAGE_SIZE;
 
 function updateGallery() {
   const grid = document.getElementById("project-grid");
-  const results = filterProjects(allProjects, currentCategory, currentQuery);
+  const results = sortProjects(filterProjects(allProjects, currentCategory, currentQuery), currentSort);
+  const shown = results.slice(0, visibleCount);                  // "Load More Work" raises visibleCount
 
-  renderProjects(results, grid);
+  renderProjects(shown, grid);
   grid.hidden = results.length === 0;
   document.getElementById("no-results").hidden = results.length > 0;
+  document.getElementById("load-more-wrap").hidden = shown.length >= results.length;
   document.getElementById("result-count").textContent =
-    results.length + (results.length === 1 ? " project" : " projects") + " shown";
+    "Showing " + shown.length + " of " + results.length + (results.length === 1 ? " project" : " projects");
 
   if (results.length === 0) {
     const what = currentQuery ? "\u201c" + currentQuery + "\u201d" : currentCategory;
@@ -45,8 +50,9 @@ function saveToUrl() {
 
 function setCategory(category) {
   currentCategory = category;
+  visibleCount = PAGE_SIZE;                                      // a new filter starts from the first page
   for (const chip of document.querySelectorAll(".chip")) {
-    chip.setAttribute("aria-pressed", chip.textContent.trim() === category ? "true" : "false");
+    chip.setAttribute("aria-pressed", chip.dataset.category === category ? "true" : "false");
   }
 }
 
@@ -55,13 +61,25 @@ function setupFilters() {
 
   for (const chip of document.querySelectorAll(".chip")) {
     chip.addEventListener("click", function () {
-      setCategory(chip.textContent.trim());
+      setCategory(chip.dataset.category);
       updateGallery();
     });
   }
 
   search.addEventListener("input", function () {
     currentQuery = search.value.trim();
+    visibleCount = PAGE_SIZE;
+    updateGallery();
+  });
+
+  document.getElementById("sort-select").addEventListener("change", function (event) {
+    currentSort = event.target.value;
+    visibleCount = PAGE_SIZE;
+    updateGallery();
+  });
+
+  document.getElementById("load-more").addEventListener("click", function () {
+    visibleCount += PAGE_SIZE;
     updateGallery();
   });
 
@@ -76,7 +94,7 @@ function setupFilters() {
   const params = new URLSearchParams(window.location.search);
   const wanted = params.get("category") || "All";
   const known = [...document.querySelectorAll(".chip")].some(function (chip) {
-    return chip.textContent.trim() === wanted;
+    return chip.dataset.category === wanted;
   });
   setCategory(known ? wanted : "All");
   currentQuery = (params.get("q") || "").trim();
