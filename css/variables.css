@@ -14,8 +14,8 @@
   --hero-from: #EFE2E2;               /* hero gradient, top to bottom */
   --hero-to: #DFE2EE;
 
-  /* typography (system fonts until the real ones are confirmed) */
-  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  /* typography: Overpass (the Figma font), system fonts as backup */
+  --font-body: "Overpass", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-lg: 1.25rem;
@@ -32,7 +32,6 @@
 
   /* layout */
   --container-max: 1440px;
-  --header-max: 1200px;         /* the top bar is narrower than the page */
   --gutter: 16px;
   --radius: 8px;
   --radius-card: 12px;
