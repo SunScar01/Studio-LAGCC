@@ -30,6 +30,10 @@ function renderProjects(projects, grid) {
     creator.href = "profile.html?name=" + encodeURIComponent(project.creator);
 
     card.querySelector(".js-major").textContent = project.major;
+    const tag = card.querySelector(".js-tag");
+    tag.textContent = project.recommended ? "Featured" : project.category;
+    tag.classList.toggle("project-card__tag--featured", Boolean(project.recommended));
+
     card.querySelector(".js-likes").textContent = project.likes;
     card.querySelector(".js-comments").textContent = (project.comments || []).length;
 
