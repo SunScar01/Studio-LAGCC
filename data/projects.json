@@ -48,7 +48,8 @@
         "name": "Jason",
         "role": "Designer and developer"
       }
-    ]
+    ],
+    "spotlight": true
   },
   {
     "id": "proj-002",
@@ -85,7 +86,8 @@
         "name": "Jessica",
         "role": "Character artist"
       }
-    ]
+    ],
+    "spotlight": true
   },
   {
     "id": "proj-003",
@@ -125,7 +127,8 @@
         "name": "Noor",
         "role": "Interface design"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-004",
@@ -175,7 +178,8 @@
         "name": "Raj",
         "role": "Finance lead"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-005",
@@ -212,7 +216,8 @@
         "name": "Chloe",
         "role": "Prototyping"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-006",
@@ -245,7 +250,8 @@
         "name": "Ana",
         "role": "Marketing"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-007",
@@ -273,7 +279,8 @@
         "name": "Priya",
         "role": "Designer"
       }
-    ]
+    ],
+    "spotlight": true
   },
   {
     "id": "proj-008",
@@ -320,7 +327,8 @@
         "name": "Kofi",
         "role": "User research"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-009",
@@ -349,7 +357,8 @@
         "name": "Lena",
         "role": "Builder and programmer"
       }
-    ]
+    ],
+    "spotlight": true
   },
   {
     "id": "proj-010",
@@ -393,7 +402,8 @@
         "name": "Eli",
         "role": "Level art"
       }
-    ]
+    ],
+    "spotlight": true
   },
   {
     "id": "proj-011",
@@ -430,7 +440,8 @@
         "name": "Joy",
         "role": "Sound"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-012",
@@ -466,7 +477,8 @@
         "name": "Andre",
         "role": "Producer and editor"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-013",
@@ -508,7 +520,8 @@
         "name": "Camila",
         "role": "Painter"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-014",
@@ -556,7 +569,8 @@
         "name": "Wen",
         "role": "Illustrator"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-015",
@@ -585,7 +599,8 @@
         "name": "Darnell",
         "role": "Designer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-016",
@@ -625,7 +640,8 @@
         "name": "Leo",
         "role": "Copywriting"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-017",
@@ -667,7 +683,8 @@
         "name": "Ravi",
         "role": "Product designer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-018",
@@ -719,7 +736,8 @@
         "name": "Mateo",
         "role": "Materials testing"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-019",
@@ -748,7 +766,8 @@
         "name": "Noah",
         "role": "Photographer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-020",
@@ -784,7 +803,8 @@
         "name": "Imani",
         "role": "Photographer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-021",
@@ -834,7 +854,8 @@
         "name": "Omari",
         "role": "Hardware"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-022",
@@ -874,7 +895,8 @@
         "name": "Beth",
         "role": "3D modelling"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-023",
@@ -904,7 +926,8 @@
         "name": "Tomas",
         "role": "Front-end developer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-024",
@@ -944,7 +967,8 @@
         "name": "Dev",
         "role": "Testing"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-025",
@@ -985,7 +1009,8 @@
         "name": "Bryan",
         "role": "Developer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-026",
@@ -1033,7 +1058,8 @@
         "name": "Hassan",
         "role": "Developer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-027",
@@ -1062,7 +1088,8 @@
         "name": "Mia",
         "role": "Writer and designer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-028",
@@ -1102,7 +1129,8 @@
         "name": "Ethan",
         "role": "Data labelling"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-029",
@@ -1144,7 +1172,8 @@
         "name": "Malik",
         "role": "Security tester"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-030",
@@ -1200,7 +1229,8 @@
         "name": "Amara",
         "role": "Drawings"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-031",
@@ -1233,7 +1263,8 @@
         "name": "Fen",
         "role": "Research"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-032",
@@ -1269,7 +1300,8 @@
         "name": "Olivia",
         "role": "Developer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-033",
@@ -1310,7 +1342,8 @@
         "name": "Jamal",
         "role": "Developer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-034",
@@ -1345,7 +1378,8 @@
         "name": "Elena",
         "role": "Analyst"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-035",
@@ -1378,7 +1412,8 @@
         "name": "Rosa",
         "role": "Interviews"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-036",
@@ -1418,7 +1453,8 @@
         "name": "Dylan",
         "role": "Finance"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-037",
@@ -1460,7 +1496,8 @@
         "name": "Marcus J.",
         "role": "Marketer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-038",
@@ -1512,7 +1549,8 @@
         "name": "Jon",
         "role": "Logistics"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-039",
@@ -1541,7 +1579,8 @@
         "name": "Lucas",
         "role": "Concept designer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-040",
@@ -1577,7 +1616,8 @@
         "name": "Sade",
         "role": "Researcher"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-041",
@@ -1623,7 +1663,8 @@
         "name": "Ines",
         "role": "Presenting"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-042",
@@ -1671,7 +1712,8 @@
         "name": "Grace",
         "role": "Producer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-043",
@@ -1700,7 +1742,8 @@
         "name": "Daniel",
         "role": "Designer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-044",
@@ -1740,7 +1783,8 @@
         "name": "Amir",
         "role": "Photography"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-045",
@@ -1782,7 +1826,8 @@
         "name": "Tess",
         "role": "Developer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-046",
@@ -1821,7 +1866,8 @@
         "name": "Cora",
         "role": "Research"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-047",
@@ -1849,7 +1895,8 @@
         "name": "Hugo",
         "role": "Designer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-048",
@@ -1885,7 +1932,8 @@
         "name": "Layla",
         "role": "Designer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-049",
@@ -1931,7 +1979,8 @@
         "name": "Jess",
         "role": "Data entry"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-050",
@@ -1978,7 +2027,8 @@
         "name": "Bianca",
         "role": "Writer and designer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-051",
@@ -2007,7 +2057,8 @@
         "name": "Eddie",
         "role": "Analyst"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-052",
@@ -2042,7 +2093,8 @@
         "name": "Amara",
         "role": "Creator"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-053",
@@ -2088,7 +2140,8 @@
         "name": "Mina",
         "role": "Data"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-054",
@@ -2136,7 +2189,8 @@
         "name": "Ayesha",
         "role": "Developer"
       }
-    ]
+    ],
+    "spotlight": false
   },
   {
     "id": "proj-055",
@@ -2169,6 +2223,7 @@
         "name": "Kim",
         "role": "Music"
       }
-    ]
+    ],
+    "spotlight": false
   }
 ]
