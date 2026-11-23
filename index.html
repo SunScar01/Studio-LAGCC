@@ -16,7 +16,7 @@
       <nav class="site-nav" aria-label="Main">
         <ul>
           <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="index.html#projects">Explore</a></li>
+          <li class="nav-item"><a href="index.html#projects">Explore</a></li>
           <li><a href="index.html">Collections</a></li>
           <li><a href="index.html">About</a></li>
         </ul>
@@ -90,6 +90,8 @@
           <button class="chip" type="button" data-category="Science" aria-pressed="false">Science</button>
           <button class="chip" type="button" data-category="Interactive Media" aria-pressed="false">Interactive Media</button>
         </div>
+        <p class="active-filter" id="major-filter" hidden>Major: <strong id="major-name"></strong>
+          <button class="active-filter__clear" type="button" id="major-clear" aria-label="Clear major filter">&times;</button></p>
         <div class="project-grid" id="project-grid"></div>
         <p class="visually-hidden" id="result-count" role="status"></p>
         <div class="load-more" id="load-more-wrap" hidden>
@@ -175,6 +177,7 @@
   </footer>
   <script src="js/auth.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/explore.js"></script>
   <script src="js/bookmarks.js"></script>
   <script src="js/cards.js"></script>
   <script src="js/filter.js"></script>
