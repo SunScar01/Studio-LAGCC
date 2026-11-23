@@ -295,6 +295,10 @@
 
 /* ---------- Explore by major menu ---------- */
 .site-header { position: relative; z-index: 30; background: var(--color-bg); }
+@media (min-width: 900px) {
+  .site-header { position: sticky; top: 0; }                    /* stays on screen, so the search box does too */
+  #projects, #comments, #journey { scroll-margin-top: 80px; }   /* anchors stop below the header */
+}
 .nav-explore { padding: 0; border: 0; background: none; color: var(--color-text); font: inherit; font-size: var(--text-sm); cursor: pointer; transition: color var(--transition); }
 .nav-explore:hover, .nav-explore:focus-visible, .nav-explore[aria-expanded="true"] { color: var(--color-link-hover); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
 
