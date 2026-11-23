@@ -59,8 +59,6 @@ function updateGallery(append) {
   grid.hidden = results.length === 0;
   document.getElementById("no-results").hidden = results.length > 0;
   document.getElementById("load-more-wrap").hidden = results.length === 0 || shown.length >= results.length;
-  document.getElementById("scroll-end").hidden = results.length <= PAGE_SIZE || shown.length < results.length;
-  document.getElementById("scroll-end").textContent = "You have seen all " + results.length + " projects.";
   document.getElementById("result-count").textContent =
     "Showing " + shown.length + " of " + results.length + (results.length === 1 ? " project" : " projects");
 
