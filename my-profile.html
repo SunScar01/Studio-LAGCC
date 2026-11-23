@@ -117,44 +117,52 @@
   </template>
 
   <footer class="site-footer">
-    <div class="container site-footer__grid">
-      <section class="footer-col" aria-labelledby="footer-contact">
-        <h2 class="footer-col__title" id="footer-contact">Contact Us</h2>
-        <address class="footer-address">
-          31-10 Thompson Avenue<br>
-          Long Island City, NY 11101<br>
-          LaGuardia Community College
-        </address>
-        <a class="footer-link--accent" href="https://www.google.com/maps/search/?api=1&amp;query=31-10+Thompson+Avenue+Long+Island+City+NY+11101">Maps and Directions</a>
-      </section>
-
-      <section class="footer-col" aria-labelledby="footer-links">
-        <h2 class="footer-col__title" id="footer-links">Quicklinks</h2>
-        <ul>
-          <li><a href="#">Majors</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="index.html">Collections</a></li>
-          <li><a href="submit.html">Start Your Project</a></li>
-        </ul>
-      </section>
-
-      <section class="footer-col" aria-labelledby="footer-follow">
-        <h2 class="footer-col__title" id="footer-follow">Follow Us</h2>
-        <!-- LaGuardia CC official accounts -->
-        <ul class="footer-social">
-          <li><a href="https://www.linkedin.com/school/laguardia-community-college/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)"><img src="assets/icons/linkedin.svg" alt="" width="32" height="32"></a></li>
-          <li><a href="https://www.facebook.com/LaGuardiaCC" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in a new tab)"><img src="assets/icons/facebook.svg" alt="" width="32" height="32"></a></li>
-          <li><a href="https://x.com/LaGuardiaCC" target="_blank" rel="noopener noreferrer" aria-label="X (opens in a new tab)"><img src="assets/icons/x.svg" alt="" width="32" height="32"></a></li>
-          <li><a href="https://www.instagram.com/LaGuardiaCC/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)"><img src="assets/icons/instagram.svg" alt="" width="32" height="32"></a></li>
-          <li><a href="https://www.youtube.com/user/LaGuardiaCCollege" target="_blank" rel="noopener noreferrer" aria-label="YouTube (opens in a new tab)"><img src="assets/icons/youtube.svg" alt="" width="32" height="32"></a></li>
-        </ul>
-      </section>
-
-      <section class="footer-col" aria-labelledby="footer-brand">
-        <h2 class="footer-col__title footer-col__title--brand" id="footer-brand">Studio LAGCC</h2>
-        <p>Student work from every major</p>
-        <a class="button" href="submit.html">Start project</a>
-      </section>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="site-logo" href="index.html"><img class="logo--light" src="assets/images/logo-horizontal.svg" alt="LAGCC STUDIO, home" width="140" height="40"><img class="logo--dark" src="assets/images/logo-horizontal-dark.svg" alt="LAGCC STUDIO, home" width="140" height="40"></a>
+          <p class="footer-brand__text">Student work from every major at LaGuardia Community College.</p>
+          <form class="footer-news" id="news-form" novalidate>
+            <label class="footer-news__label" for="news-email">Subscribe to monthly highlights</label>
+            <div class="footer-news__row">
+              <input id="news-email" type="email" placeholder="Enter your email" autocomplete="email" required>
+              <button class="button button--dark" type="submit">Join</button>
+            </div>
+            <p class="footer-news__status" id="news-status" role="status"></p>
+          </form>
+        </div>
+        <nav class="footer-col" aria-labelledby="footer-disciplines">
+          <h2 id="footer-disciplines">Disciplines</h2>
+          <ul>
+            <li><a href="index.html?q=graphic">Graphic Design</a></li>
+            <li><a href="index.html?category=Engineering">Engineering</a></li>
+            <li><a href="index.html?q=music">Music</a></li>
+            <li><a href="index.html?category=Art%20%26%20Design">Art</a></li>
+          </ul>
+        </nav>
+        <section class="footer-col" aria-labelledby="footer-campus">
+          <h2 id="footer-campus">Campus Location</h2>
+          <address>
+            <strong>LaGuardia Community College</strong>
+            31-10 Thomson Avenue<br>Long Island City, NY 11101
+          </address>
+          <a class="footer-link--accent" href="https://www.google.com/maps/search/?api=1&amp;query=31-10+Thomson+Avenue+Long+Island+City+NY+11101" target="_blank" rel="noopener noreferrer">Campus Maps &amp; Directions<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </section>
+        <nav class="footer-col footer-connect" aria-labelledby="footer-connect">
+          <h2 id="footer-connect">Connect</h2>
+          <ul>
+            <li><a href="https://www.linkedin.com/school/laguardia-community-college/" target="_blank" rel="noopener noreferrer"><img src="assets/icons/linkedin.svg" alt="" width="20" height="20">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://www.instagram.com/LaGuardiaCC/" target="_blank" rel="noopener noreferrer"><img src="assets/icons/instagram.svg" alt="" width="20" height="20">Instagram<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://x.com/LaGuardiaCC" target="_blank" rel="noopener noreferrer"><img src="assets/icons/x.svg" alt="" width="20" height="20">X<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://www.youtube.com/user/LaGuardiaCCollege" target="_blank" rel="noopener noreferrer"><img src="assets/icons/youtube.svg" alt="" width="20" height="20">YouTube<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://www.facebook.com/LaGuardiaCC" target="_blank" rel="noopener noreferrer"><img src="assets/icons/facebook.svg" alt="" width="20" height="20">Facebook<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-legal">
+        <p>&copy;2026 LaGuardia Community College, City University of New York. All rights reserved.</p>
+        <p><a href="#">Privacy</a> <a href="#">Policy</a></p>
+      </div>
     </div>
   </footer>
   <script src="js/auth.js"></script>
@@ -163,5 +171,6 @@
   <script src="js/bookmarks.js"></script>
   <script src="js/cards.js"></script>
   <script src="js/my-profile.js"></script>
+  <script src="js/footer.js"></script>
 </body>
 </html>
