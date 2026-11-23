@@ -1,9 +1,10 @@
 // Draws project cards into a grid. Used by the gallery (app.js) and the profile pages.
 // Needs bookmarks.js loaded first.
-function renderProjects(projects, grid) {
+function renderProjects(projects, grid, append) {
   const template = document.getElementById("project-card-template");
 
-  grid.innerHTML = "";                                  // clear the grid first
+  if (!append) grid.innerHTML = "";                     // clear the grid first (append = keep the cards already there)
+  let delay = 0;
 
   for (const project of projects) {
     const card = template.content.cloneNode(true);      // copy the blueprint
@@ -37,6 +38,12 @@ function renderProjects(projects, grid) {
     card.querySelector(".js-likes").textContent = project.likes;
     card.querySelector(".js-comments").textContent = (project.comments || []).length;
 
+    if (append) {                                       // new cards fade in one after another
+      const root = card.firstElementChild;
+      root.classList.add("is-new");
+      root.style.animationDelay = delay + "ms";
+      delay += 90;
+    }
     grid.appendChild(card);                             // put it on the page
   }
 }
