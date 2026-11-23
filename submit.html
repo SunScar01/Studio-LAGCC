@@ -37,6 +37,16 @@
   <main class="container submit-page">
     <h1 class="visually-hidden">Submit a project</h1>
 
+    <section class="submit-gate" id="submit-gate" aria-labelledby="gate-title" hidden>
+      <h2 id="gate-title">Log in to submit your project</h2>
+      <p>You need a STUDIO account to submit a project. It only takes a minute.</p>
+      <div class="submit-gate__actions">
+        <a class="about-button" href="login.html?next=submit.html">Log in</a>
+        <a class="button button--secondary" href="signup.html?next=submit.html">Create an account</a>
+      </div>
+    </section>
+
+    <div id="submit-flow">
     <ol class="stepper" id="stepper" aria-label="Submission steps">
       <li class="stepper__item" data-step="1"><button type="button" class="stepper__button"><span class="stepper__num">1.</span> Information</button></li>
       <li class="stepper__item" data-step="2"><button type="button" class="stepper__button"><span class="stepper__num">2.</span> Upload</button></li>
@@ -153,6 +163,7 @@
         <button class="submit-button" type="submit" id="btn-next">Next</button>
       </div>
     </form>
+    </div>
   </main>
 
     <template id="project-card-template">
