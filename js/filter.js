@@ -18,9 +18,13 @@ function matchesQuery(project, query) {
   });
 }
 
-function filterProjects(projects, category, query) {
+function matchesMajor(project, major) {
+  return major === "" || project.major.toLowerCase() === major.toLowerCase();   // "" means any major
+}
+
+function filterProjects(projects, category, query, major) {
   return projects.filter(function (project) {
-    return matchesCategory(project, category) && matchesQuery(project, query);
+    return matchesCategory(project, category) && matchesQuery(project, query) && matchesMajor(project, major || "");
   });
 }
 
