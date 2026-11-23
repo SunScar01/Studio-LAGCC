@@ -92,6 +92,18 @@ function setCategory(category) {
   }
 }
 
+// On wide screens the header stays at the top while you scroll (see components.css), so the search box stays in view
+function stickyHeader() {
+  return window.matchMedia("(min-width: 900px)").matches;
+}
+
+// The search bar is in the header, so bring the results into view (only if they are further down)
+function scrollToResults() {
+  const section = document.getElementById("projects");
+  if (!section || section.getBoundingClientRect().top < 120) return;
+  section.scrollIntoView({ block: "start", behavior: "instant" });                    // instant: the grid changes with every key, so a smooth scroll keeps getting cut off
+}
+
 function setupFilters() {
   const search = document.getElementById("site-search");
 
@@ -106,6 +118,12 @@ function setupFilters() {
     currentQuery = search.value.trim();
     visibleCount = PAGE_SIZE;
     updateGallery();
+    if (currentQuery && stickyHeader()) scrollToResults();      // phones: wait for Enter, or the page jumps back to the box
+  });
+  search.addEventListener("keydown", function (event) {
+    if (event.key !== "Enter" || !currentQuery) return;
+    scrollToResults();
+    if (!stickyHeader()) search.blur();                         // closes the phone keyboard so the results show
   });
 
   document.getElementById("sort-select").addEventListener("change", function (event) {
