@@ -65,7 +65,7 @@
     const top = el("div", "explore-menu__links");
     for (const text of ["All 68 Majors", "All Work"]) {
       const a = el("a", "explore-menu__all", text + " ");
-      a.href = "index.html#projects";
+      a.href = text === "All Work" ? "collections.html" : "index.html#projects";
       a.insertAdjacentHTML("beforeend", ARROW);        // fixed icon, no user data
       top.appendChild(a);
     }
