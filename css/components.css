@@ -486,3 +486,18 @@ span.pill { cursor: default; }
 .footer-legal a:hover { color: var(--color-link-hover); text-decoration: underline; }
 @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-brand { grid-column: 1 / -1; } }
 @media (max-width: 520px) { .footer-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Load more while scrolling ---------- */
+.load-more { min-height: 48px; align-items: center; }
+.scroll-loading { display: flex; align-items: center; gap: var(--space-3); margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+.scroll-loading[hidden], .load-more__button[hidden] { display: none; }
+.scroll-loading__dot { width: 16px; height: 16px; border: 2px solid var(--color-border); border-top-color: var(--color-brand-red); border-radius: 50%; animation: spin 0.8s linear infinite; }
+.scroll-end { margin: var(--space-8) 0 0; text-align: center; color: var(--color-text-muted); font-size: var(--text-sm); }
+.scroll-end[hidden] { display: none; }
+.project-card.is-new, .project-grid > .is-new { animation: card-in 0.5s ease both; }
+@keyframes card-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .project-card.is-new, .project-grid > .is-new { animation: none; }
+  .scroll-loading__dot { animation: none; }
+}
