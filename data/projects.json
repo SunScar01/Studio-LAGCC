@@ -12,7 +12,7 @@
       "VS Code"
     ],
     "description": "A 3D puzzle game built during the summer vacation 2026. It was created in Unity using Blender and VS Code to design and code the entire game from scratch. It's a solo project by Jason.",
-    "thumbnail": "assets/thumbnails/project-001.png",
+    "thumbnail": "assets/thumbnails/project-001.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-07-26",
     "likes": 120,
@@ -63,7 +63,7 @@
       "Canva"
     ],
     "description": "A digital male character designed for an online PVP game. It's a 3D character with detailed, realistic design and a smooth added animation created through Blender.",
-    "thumbnail": "assets/thumbnails/project-002.png",
+    "thumbnail": "assets/thumbnails/project-002.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-09-22",
     "likes": 96,
@@ -105,7 +105,7 @@
       "ProcMon"
     ],
     "description": "An antivirus program for windows that runs in the background and provides pc with auto-malware detection and removal, deep scanning on any downloaded apps and fortifying system files to prevent files corruption or crash.",
-    "thumbnail": "assets/thumbnails/project-003.png",
+    "thumbnail": "assets/thumbnails/project-003.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-04-21",
     "likes": 84,
@@ -143,7 +143,7 @@
       "LangChain"
     ],
     "description": "A share market graph analysing AI model capable of analysing the upward and downward trend of the graph and notifying the users accordingly.",
-    "thumbnail": "assets/thumbnails/project-004.png",
+    "thumbnail": "assets/thumbnails/project-004.jpg",
     "projectUrl": "https://example.com",
     "date": "2025-03-27",
     "likes": 64,
@@ -194,7 +194,7 @@
       "3D Printing"
     ],
     "description": "A portable charger with a built-in solar panel and a 3D-printed case, designed for campus use.",
-    "thumbnail": "assets/thumbnails/project-005.png",
+    "thumbnail": "assets/thumbnails/project-005.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-05-14",
     "likes": 52,
@@ -232,7 +232,7 @@
       "PowerPoint"
     ],
     "description": "A full business plan for a student-run coffee cart, with cost estimates, pricing and a pitch deck.",
-    "thumbnail": "assets/thumbnails/project-006.png",
+    "thumbnail": "assets/thumbnails/project-006.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-02-10",
     "likes": 88,
@@ -265,7 +265,7 @@
       "Photoshop"
     ],
     "description": "A set of five posters promoting flu shots, hand-washing and healthy sleep, designed for a campus health fair.",
-    "thumbnail": "assets/thumbnails/project-007.png",
+    "thumbnail": "assets/thumbnails/project-007.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-06-03",
     "likes": 37,
@@ -296,7 +296,7 @@
       "Firebase"
     ],
     "description": "A web app that helps students find and join study groups by course and time.",
-    "thumbnail": "assets/thumbnails/project-008.png",
+    "thumbnail": "assets/thumbnails/project-008.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-08-15",
     "likes": 105,
@@ -343,7 +343,7 @@
       "Python"
     ],
     "description": "A moisture-sensing system that waters houseplants automatically and sends a phone alert when the tank is low. Built for a plant biology class.",
-    "thumbnail": "assets/thumbnails/project-009.png",
+    "thumbnail": "assets/thumbnails/project-009.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-03-30",
     "likes": 73,
@@ -373,7 +373,7 @@
       "Audacity"
     ],
     "description": "A 2D pixel-art platformer about dodging obstacles on a subway platform, with original music and sound effects.",
-    "thumbnail": "assets/thumbnails/project-010.png",
+    "thumbnail": "assets/thumbnails/project-010.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-09-05",
     "likes": 59,
@@ -418,7 +418,7 @@
       "Sony A7"
     ],
     "description": "An eight-minute short film about a late-night commuter on the 7 train, shot over three weekends in Queens.",
-    "thumbnail": "assets/thumbnails/project-002.png",
+    "thumbnail": "assets/thumbnails/project-011.jpg",
     "projectUrl": "https://example.com",
     "date": "2025-09-12",
     "likes": 15,
@@ -456,7 +456,7 @@
       "Zoom H5"
     ],
     "description": "A documentary built from interviews with shop owners along Roosevelt Avenue.",
-    "thumbnail": "assets/thumbnails/project-010.png",
+    "thumbnail": "assets/thumbnails/project-012.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-04-18",
     "likes": 52,
@@ -493,7 +493,7 @@
       "Photoshop"
     ],
     "description": "Six oil portraits of family members, painted from photographs and finished with a digital catalogue.",
-    "thumbnail": "assets/thumbnails/project-002.png",
+    "thumbnail": "assets/thumbnails/project-013.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-09-30",
     "likes": 89,
@@ -536,7 +536,7 @@
       "Procreate"
     ],
     "description": "A set of ink and watercolor landscapes of neighbourhood parks, scanned and edited in Procreate.",
-    "thumbnail": "assets/thumbnails/project-002.png",
+    "thumbnail": "assets/thumbnails/project-014.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-02-14",
     "likes": 126,
@@ -585,7 +585,7 @@
       "Figma"
     ],
     "description": "Four posters exploring how type changes the mood of one short poem.",
-    "thumbnail": "assets/thumbnails/project-002.png",
+    "thumbnail": "assets/thumbnails/project-015.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-07-08",
     "likes": 33,
@@ -615,7 +615,7 @@
       "Canva"
     ],
     "description": "A logo, packaging and menu for a neighbourhood bakery, designed with the owner's feedback.",
-    "thumbnail": "assets/thumbnails/project-006.png",
+    "thumbnail": "assets/thumbnails/project-016.jpg",
     "projectUrl": "https://example.com",
     "date": "2025-11-03",
     "likes": 70,
@@ -656,7 +656,7 @@
       "Keyshot"
     ],
     "description": "A desk lamp with swappable arms, prototyped on a 3D printer and rendered in Keyshot.",
-    "thumbnail": "assets/thumbnails/project-005.png",
+    "thumbnail": "assets/thumbnails/project-017.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-05-22",
     "likes": 107,
@@ -699,7 +699,7 @@
       "Illustrator"
     ],
     "description": "A helmet that folds flat to fit in a bag, with three prototype rounds.",
-    "thumbnail": "assets/thumbnails/project-005.png",
+    "thumbnail": "assets/thumbnails/project-018.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-10-15",
     "likes": 144,
@@ -752,7 +752,7 @@
       "Photoshop"
     ],
     "description": "Twenty black-and-white portraits of people who work in Long Island City.",
-    "thumbnail": "assets/thumbnails/project-002.png",
+    "thumbnail": "assets/thumbnails/project-019.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-03-09",
     "likes": 51,
@@ -782,7 +782,7 @@
       "Capture One"
     ],
     "description": "A photo essay on how the city looks between midnight and dawn.",
-    "thumbnail": "assets/thumbnails/project-002.png",
+    "thumbnail": "assets/thumbnails/project-020.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-08-27",
     "likes": 88,
@@ -819,7 +819,7 @@
       "Projector"
     ],
     "description": "A projected wall that reacts to movement, built for a student showcase.",
-    "thumbnail": "assets/thumbnails/project-010.png",
+    "thumbnail": "assets/thumbnails/project-021.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-01-20",
     "likes": 125,
@@ -870,7 +870,7 @@
       "Blender"
     ],
     "description": "A phone app that shows facts about campus buildings when you point the camera at them.",
-    "thumbnail": "assets/thumbnails/project-010.png",
+    "thumbnail": "assets/thumbnails/project-022.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-06-11",
     "likes": 32,
@@ -912,7 +912,7 @@
       "Open-Meteo API"
     ],
     "description": "A dashboard that shows a 7-day forecast and saves favourite cities.",
-    "thumbnail": "assets/thumbnails/project-003.png",
+    "thumbnail": "assets/thumbnails/project-023.jpg",
     "projectUrl": "https://example.com",
     "date": "2025-09-12",
     "likes": 69,
@@ -942,7 +942,7 @@
       "SQLite"
     ],
     "description": "A web app where students report free seats in the library, with live counts per floor.",
-    "thumbnail": "assets/thumbnails/project-003.png",
+    "thumbnail": "assets/thumbnails/project-024.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-04-18",
     "likes": 106,
@@ -982,7 +982,7 @@
       "Pygame"
     ],
     "description": "Animations of breadth-first, depth-first and A* search solving random mazes.",
-    "thumbnail": "assets/thumbnails/project-008.png",
+    "thumbnail": "assets/thumbnails/project-025.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-09-30",
     "likes": 143,
@@ -1025,7 +1025,7 @@
       "Grafana"
     ],
     "description": "A small monitor that checks lab network speed every hour and charts it.",
-    "thumbnail": "assets/thumbnails/project-003.png",
+    "thumbnail": "assets/thumbnails/project-026.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-02-14",
     "likes": 50,
@@ -1074,7 +1074,7 @@
       "PCPartPicker"
     ],
     "description": "A step-by-step visual guide for new students building a budget computer.",
-    "thumbnail": "assets/thumbnails/project-008.png",
+    "thumbnail": "assets/thumbnails/project-027.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-07-08",
     "likes": 87,
@@ -1104,7 +1104,7 @@
       "Wireshark"
     ],
     "description": "A classifier that flags suspicious emails and explains why, trained on a public dataset.",
-    "thumbnail": "assets/thumbnails/project-003.png",
+    "thumbnail": "assets/thumbnails/project-028.jpg",
     "projectUrl": "https://example.com",
     "date": "2025-11-03",
     "likes": 124,
@@ -1145,7 +1145,7 @@
       "Kali Linux"
     ],
     "description": "A checklist and report from auditing three home networks, with consent from each owner.",
-    "thumbnail": "assets/thumbnails/project-003.png",
+    "thumbnail": "assets/thumbnails/project-029.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-05-22",
     "likes": 31,
@@ -1188,7 +1188,7 @@
       "Excel"
     ],
     "description": "A scale bridge tested to hold 20 times its own weight, with load calculations.",
-    "thumbnail": "assets/thumbnails/project-005.png",
+    "thumbnail": "assets/thumbnails/project-030.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-10-15",
     "likes": 68,
@@ -1245,7 +1245,7 @@
       "SketchUp"
     ],
     "description": "A plan for collecting rainwater from a campus roof to water the garden.",
-    "thumbnail": "assets/thumbnails/project-009.png",
+    "thumbnail": "assets/thumbnails/project-031.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-03-09",
     "likes": 105,
@@ -1279,7 +1279,7 @@
       "Firebase"
     ],
     "description": "A simple habit tracker with streaks and weekly summaries.",
-    "thumbnail": "assets/thumbnails/project-003.png",
+    "thumbnail": "assets/thumbnails/project-032.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-08-27",
     "likes": 142,
@@ -1315,7 +1315,7 @@
       "Tkinter"
     ],
     "description": "A desktop tool that scales recipes for any number of servings and converts units.",
-    "thumbnail": "assets/thumbnails/project-003.png",
+    "thumbnail": "assets/thumbnails/project-033.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-01-20",
     "likes": 49,
@@ -1357,7 +1357,7 @@
       "Google Sheets"
     ],
     "description": "A monthly budget workbook with charts, built for first-time student renters.",
-    "thumbnail": "assets/thumbnails/project-004.png",
+    "thumbnail": "assets/thumbnails/project-034.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-06-11",
     "likes": 86,
@@ -1394,7 +1394,7 @@
       "Canva"
     ],
     "description": "A short guide and template set for food-truck owners keeping their own books.",
-    "thumbnail": "assets/thumbnails/project-004.png",
+    "thumbnail": "assets/thumbnails/project-035.jpg",
     "projectUrl": "https://example.com",
     "date": "2025-09-12",
     "likes": 123,
@@ -1428,7 +1428,7 @@
       "Canva"
     ],
     "description": "A pitch deck and financial plan for a healthy snack box for students.",
-    "thumbnail": "assets/thumbnails/project-006.png",
+    "thumbnail": "assets/thumbnails/project-036.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-04-18",
     "likes": 30,
@@ -1469,7 +1469,7 @@
       "Excel"
     ],
     "description": "A three-month content plan and results report for a neighbourhood gym.",
-    "thumbnail": "assets/thumbnails/project-006.png",
+    "thumbnail": "assets/thumbnails/project-037.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-09-30",
     "likes": 67,
@@ -1512,7 +1512,7 @@
       "Trello"
     ],
     "description": "A full plan for a 200-person career fair: budget, schedule and vendor list.",
-    "thumbnail": "assets/thumbnails/project-006.png",
+    "thumbnail": "assets/thumbnails/project-038.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-02-14",
     "likes": 104,
@@ -1565,7 +1565,7 @@
       "Excel"
     ],
     "description": "A concept and budget for a 20-room hotel in Long Island City.",
-    "thumbnail": "assets/thumbnails/project-006.png",
+    "thumbnail": "assets/thumbnails/project-039.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-07-08",
     "likes": 141,
@@ -1595,7 +1595,7 @@
       "Google Docs"
     ],
     "description": "Plain-language fact sheets on tenant rights, reviewed by a faculty member.",
-    "thumbnail": "assets/thumbnails/project-008.png",
+    "thumbnail": "assets/thumbnails/project-040.jpg",
     "projectUrl": "https://example.com",
     "date": "2025-11-03",
     "likes": 48,
@@ -1632,7 +1632,7 @@
       "PowerPoint"
     ],
     "description": "A case brief and slides prepared for the college mock trial team.",
-    "thumbnail": "assets/thumbnails/project-008.png",
+    "thumbnail": "assets/thumbnails/project-041.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-05-22",
     "likes": 85,
@@ -1679,7 +1679,7 @@
       "Camera"
     ],
     "description": "A three-minute training video on hand hygiene for new nursing students.",
-    "thumbnail": "assets/thumbnails/project-007.png",
+    "thumbnail": "assets/thumbnails/project-042.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-10-15",
     "likes": 122,
@@ -1728,7 +1728,7 @@
       "Google Forms"
     ],
     "description": "A fillable care plan template tested by classmates during lab practice.",
-    "thumbnail": "assets/thumbnails/project-007.png",
+    "thumbnail": "assets/thumbnails/project-043.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-03-09",
     "likes": 29,
@@ -1758,7 +1758,7 @@
       "Excel"
     ],
     "description": "A cookbook of 15 meals under five dollars per serving, with nutrition facts.",
-    "thumbnail": "assets/thumbnails/project-007.png",
+    "thumbnail": "assets/thumbnails/project-044.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-08-27",
     "likes": 66,
@@ -1799,7 +1799,7 @@
       "CSS"
     ],
     "description": "A web tool that totals cost and calories for a week of meals.",
-    "thumbnail": "assets/thumbnails/project-003.png",
+    "thumbnail": "assets/thumbnails/project-045.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-01-20",
     "likes": 103,
@@ -1841,7 +1841,7 @@
       "Canva"
     ],
     "description": "A set of illustrated exercise cards for hand recovery, with large text.",
-    "thumbnail": "assets/thumbnails/project-007.png",
+    "thumbnail": "assets/thumbnails/project-046.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-06-11",
     "likes": 140,
@@ -1881,7 +1881,7 @@
       "3D Printing"
     ],
     "description": "A 3D-printed grip that makes spoons easier to hold, tested with three people.",
-    "thumbnail": "assets/thumbnails/project-005.png",
+    "thumbnail": "assets/thumbnails/project-047.jpg",
     "projectUrl": "https://example.com",
     "date": "2025-09-12",
     "likes": 47,
@@ -1911,7 +1911,7 @@
       "Excel"
     ],
     "description": "An infographic that answers the ten most common vaccine questions.",
-    "thumbnail": "assets/thumbnails/project-007.png",
+    "thumbnail": "assets/thumbnails/project-048.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-04-18",
     "likes": 84,
@@ -1948,7 +1948,7 @@
       "Tableau"
     ],
     "description": "A 120-person survey on access to clinics, shown in an interactive map.",
-    "thumbnail": "assets/thumbnails/project-009.png",
+    "thumbnail": "assets/thumbnails/project-049.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-09-30",
     "likes": 121,
@@ -1994,7 +1994,7 @@
       "Illustrator"
     ],
     "description": "A pocket guide for dog and cat first aid, reviewed by a vet technician.",
-    "thumbnail": "assets/thumbnails/project-007.png",
+    "thumbnail": "assets/thumbnails/project-050.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-02-14",
     "likes": 28,
@@ -2043,7 +2043,7 @@
       "Python"
     ],
     "description": "A dashboard of adoption rates at a local shelter by month and animal type.",
-    "thumbnail": "assets/thumbnails/project-009.png",
+    "thumbnail": "assets/thumbnails/project-051.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-07-08",
     "likes": 65,
@@ -2072,7 +2072,7 @@
       "Canva"
     ],
     "description": "Flashcards for cell biology, with diagrams drawn by hand and scanned.",
-    "thumbnail": "assets/thumbnails/project-008.png",
+    "thumbnail": "assets/thumbnails/project-052.jpg",
     "projectUrl": "https://example.com",
     "date": "2025-11-03",
     "likes": 102,
@@ -2109,7 +2109,7 @@
       "Sensors"
     ],
     "description": "A month-long experiment tracking compost temperature with a sensor.",
-    "thumbnail": "assets/thumbnails/project-009.png",
+    "thumbnail": "assets/thumbnails/project-053.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-05-22",
     "likes": 139,
@@ -2156,7 +2156,7 @@
       "CSS"
     ],
     "description": "A quiz app for practising Spanish vocabulary with spaced repetition.",
-    "thumbnail": "assets/thumbnails/project-008.png",
+    "thumbnail": "assets/thumbnails/project-054.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-10-15",
     "likes": 46,
@@ -2205,7 +2205,7 @@
       "Audacity"
     ],
     "description": "A pixel-art platformer about a cat who runs a corner store.",
-    "thumbnail": "assets/thumbnails/project-001.png",
+    "thumbnail": "assets/thumbnails/project-055.jpg",
     "projectUrl": "https://example.com",
     "date": "2026-03-09",
     "likes": 83,
