@@ -40,6 +40,14 @@
         "text": "The music fits the mood perfectly.",
         "date": "2026-08-09"
       }
+    ],
+    "role": "Designer and developer",
+    "duration": "8 weeks",
+    "team": [
+      {
+        "name": "Jason",
+        "role": "Designer and developer"
+      }
     ]
   },
   {
@@ -69,6 +77,14 @@
         "text": "The turnaround sheet is really clear. Great color choices.",
         "date": "2026-09-28"
       }
+    ],
+    "role": "Character artist",
+    "duration": "5 weeks",
+    "team": [
+      {
+        "name": "Jessica",
+        "role": "Character artist"
+      }
     ]
   },
   {
@@ -93,7 +109,23 @@
     "likes": 84,
     "recommended": false,
     "images": [],
-    "comments": []
+    "comments": [],
+    "role": "Developer",
+    "duration": "10 weeks",
+    "team": [
+      {
+        "name": "Tylor",
+        "role": "Developer"
+      },
+      {
+        "name": "Sam",
+        "role": "Security testing"
+      },
+      {
+        "name": "Noor",
+        "role": "Interface design"
+      }
+    ]
   },
   {
     "id": "proj-004",
@@ -127,6 +159,22 @@
         "text": "Good question. About four times out of ten on our test data, so it is for learning only.",
         "date": "2026-04-12"
       }
+    ],
+    "role": "Data analyst",
+    "duration": "12 weeks",
+    "team": [
+      {
+        "name": "Dyson",
+        "role": "Data analyst"
+      },
+      {
+        "name": "Elena",
+        "role": "Business research"
+      },
+      {
+        "name": "Raj",
+        "role": "Finance lead"
+      }
     ]
   },
   {
@@ -148,7 +196,23 @@
     "likes": 52,
     "recommended": false,
     "images": [],
-    "comments": []
+    "comments": [],
+    "role": "Lead engineer",
+    "duration": "9 weeks",
+    "team": [
+      {
+        "name": "Maria",
+        "role": "Lead engineer"
+      },
+      {
+        "name": "Ibrahim",
+        "role": "Electronics"
+      },
+      {
+        "name": "Chloe",
+        "role": "Prototyping"
+      }
+    ]
   },
   {
     "id": "proj-006",
@@ -169,7 +233,19 @@
     "likes": 88,
     "recommended": false,
     "images": [],
-    "comments": []
+    "comments": [],
+    "role": "Business planner",
+    "duration": "6 weeks",
+    "team": [
+      {
+        "name": "Omar",
+        "role": "Business planner"
+      },
+      {
+        "name": "Ana",
+        "role": "Marketing"
+      }
+    ]
   },
   {
     "id": "proj-007",
@@ -189,7 +265,15 @@
     "likes": 37,
     "recommended": false,
     "images": [],
-    "comments": []
+    "comments": [],
+    "role": "Designer",
+    "duration": "4 weeks",
+    "team": [
+      {
+        "name": "Priya",
+        "role": "Designer"
+      }
+    ]
   },
   {
     "id": "proj-008",
@@ -224,6 +308,18 @@
         "text": "The layout is easy to follow on my phone.",
         "date": "2026-08-22"
       }
+    ],
+    "role": "Designer and developer",
+    "duration": "7 weeks",
+    "team": [
+      {
+        "name": "Chris",
+        "role": "Designer and developer"
+      },
+      {
+        "name": "Kofi",
+        "role": "User research"
+      }
     ]
   },
   {
@@ -245,7 +341,15 @@
     "likes": 73,
     "recommended": false,
     "images": [],
-    "comments": []
+    "comments": [],
+    "role": "Builder and programmer",
+    "duration": "8 weeks",
+    "team": [
+      {
+        "name": "Lena",
+        "role": "Builder and programmer"
+      }
+    ]
   },
   {
     "id": "proj-010",
@@ -272,6 +376,22 @@
         "author": "Marcus",
         "text": "Thanks for playing! More levels are coming soon.",
         "date": "2026-09-10"
+      }
+    ],
+    "role": "Game designer",
+    "duration": "6 weeks",
+    "team": [
+      {
+        "name": "Marcus",
+        "role": "Game designer"
+      },
+      {
+        "name": "Tasha",
+        "role": "Sound design"
+      },
+      {
+        "name": "Eli",
+        "role": "Level art"
       }
     ]
   }
