@@ -1,6 +1,22 @@
 // Demo login for the browser only. No server, and passwords are never saved or sent anywhere.
 const USER_KEY = "lagccStudioUser";
 
+// Where to go after logging in or signing up: ?next=submit.html (only a plain page name on this site)
+function nextPage() {
+  const next = new URLSearchParams(window.location.search).get("next") || "";
+  return /^[a-z-]+\.html$/.test(next) ? next : "index.html";
+}
+
+// Keep ?next= when moving between the login and sign-up pages
+function keepNext() {
+  const next = new URLSearchParams(window.location.search).get("next");
+  if (!/^[a-z-]+\.html$/.test(next || "")) return;
+  document.querySelectorAll('a[href="login.html"], a[href="signup.html"]').forEach(function (link) {
+    if (link.closest(".site-header")) return;
+    link.href = link.getAttribute("href") + "?next=" + next;
+  });
+}
+
 function getUser() {
   try {
     const text = localStorage.getItem(USER_KEY) || sessionStorage.getItem(USER_KEY);
@@ -77,7 +93,7 @@ function setupLogin(form) {
     if (form.password.value === "") { showError("password", "Enter your password."); ok = false; }
     if (!ok) return;
     saveUser(email, form.remember.checked);
-    window.location.href = "index.html";
+    window.location.href = nextPage();
   });
 }
 
@@ -92,7 +108,7 @@ function setupSignup(form) {
     if (form.confirm.value !== form.password.value) { showError("confirm", "Passwords do not match."); ok = false; }
     if (!ok) return;
     saveUser(email, form.remember.checked);
-    window.location.href = "index.html";
+    window.location.href = nextPage();
   });
 }
 
@@ -136,3 +152,4 @@ const loginForm = document.getElementById("login-form");
 const signupForm = document.getElementById("signup-form");
 if (loginForm) setupLogin(loginForm);
 if (signupForm) setupSignup(signupForm);
+keepNext();
