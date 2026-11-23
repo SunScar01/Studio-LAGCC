@@ -18,19 +18,49 @@ let currentCategory = "All";
 let currentQuery = "";
 let currentMajor = "";
 let currentSort = "trending";
-const PAGE_SIZE = 8;
+const PAGE_SIZE = 8;                                             // first screen
+const SCROLL_BATCH = 4;                                          // cards added each time the page end comes into view
+const SCROLL_DELAY = 600;                                        // ms between batches, so the page fills slowly
+let loadingMore = false;
 let visibleCount = PAGE_SIZE;
 let hasScrolledToResults = false;
 
-function updateGallery() {
+// Loads a few more cards each time the end of the grid scrolls into view, with a pause between batches
+function setupInfiniteScroll() {
+  const wrap = document.getElementById("load-more-wrap");
+  if (!("IntersectionObserver" in window)) return;               // the Load More button stays
+  document.getElementById("load-more").hidden = true;
+  const spinner = document.getElementById("scroll-loading");
+
+  const observer = new IntersectionObserver(function (entries) {
+    const pastIt = entries[0].boundingClientRect.top < 0;        // scrolled beyond the grid end: keep filling, slowly
+    if (!(entries[0].isIntersecting || pastIt) || loadingMore || wrap.hidden) return;
+    loadingMore = true;
+    spinner.hidden = false;
+    setTimeout(function () {
+      visibleCount += SCROLL_BATCH;
+      updateGallery(true);
+      spinner.hidden = true;
+      loadingMore = false;
+      observer.unobserve(wrap);                                  // observe again: if the end is still on screen it loads the next batch
+      if (!wrap.hidden) observer.observe(wrap);
+    }, SCROLL_DELAY);
+  }, { rootMargin: "0px 0px 500px 0px" });
+  observer.observe(wrap);
+}
+
+function updateGallery(append) {
   const grid = document.getElementById("project-grid");
   const results = sortProjects(filterProjects(allProjects, currentCategory, currentQuery, currentMajor), currentSort);
-  const shown = results.slice(0, visibleCount);                  // "Load More Work" raises visibleCount
+  const shown = results.slice(0, visibleCount);                  // scrolling to the end raises visibleCount
+  const alreadyShown = append ? grid.children.length : 0;
 
-  renderProjects(shown, grid);
+  renderProjects(shown.slice(alreadyShown), grid, Boolean(append));
   grid.hidden = results.length === 0;
   document.getElementById("no-results").hidden = results.length > 0;
-  document.getElementById("load-more-wrap").hidden = shown.length >= results.length;
+  document.getElementById("load-more-wrap").hidden = results.length === 0 || shown.length >= results.length;
+  document.getElementById("scroll-end").hidden = results.length <= PAGE_SIZE || shown.length < results.length;
+  document.getElementById("scroll-end").textContent = "You have seen all " + results.length + " projects.";
   document.getElementById("result-count").textContent =
     "Showing " + shown.length + " of " + results.length + (results.length === 1 ? " project" : " projects");
 
@@ -84,10 +114,13 @@ function setupFilters() {
     updateGallery();
   });
 
+  // Fallback button (browsers without IntersectionObserver)
   document.getElementById("load-more").addEventListener("click", function () {
     visibleCount += PAGE_SIZE;
     updateGallery();
   });
+
+  setupInfiniteScroll();
 
   document.getElementById("major-clear").addEventListener("click", function () {
     currentMajor = "";
