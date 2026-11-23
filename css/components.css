@@ -268,7 +268,7 @@
 /* ---------- Featured Projects section (new design) ---------- */
 .section--featured { padding-block: var(--space-12); background: var(--hero-to); }
 .section-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--space-4); margin-bottom: var(--space-6); }
-.section--featured h2 { margin: 0; font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.15; }
+.section--featured h1, .section--featured h2 { margin: 0; font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.15; }
 .section-sub { margin: var(--space-1) 0 0; color: var(--color-text-muted); }
 .sort { display: flex; align-items: center; gap: var(--space-3); font-size: var(--text-sm); color: var(--color-text-muted); }
 .sort__select { height: 40px; padding: 0 var(--space-4); border: 0; border-radius: var(--radius); background: var(--color-bg); color: var(--color-text); font: inherit; cursor: pointer; }
