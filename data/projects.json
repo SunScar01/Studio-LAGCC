@@ -394,5 +394,1781 @@
         "role": "Level art"
       }
     ]
+  },
+  {
+    "id": "proj-011",
+    "title": "Short Film: Last Train Home",
+    "creator": "Valeria",
+    "creatorEmail": "valeria@example.com",
+    "major": "Film & Television",
+    "category": "Art & Design",
+    "tools": [
+      "Premiere Pro",
+      "DaVinci Resolve",
+      "Sony A7"
+    ],
+    "description": "An eight-minute short film about a late-night commuter on the 7 train, shot over three weekends in Queens.",
+    "thumbnail": "assets/thumbnails/project-002.png",
+    "projectUrl": "https://example.com",
+    "date": "2025-09-12",
+    "likes": 15,
+    "recommended": true,
+    "images": [],
+    "comments": [],
+    "role": "Director and editor",
+    "duration": "7 weeks",
+    "team": [
+      {
+        "name": "Valeria",
+        "role": "Director and editor"
+      },
+      {
+        "name": "Hamid",
+        "role": "Cinematography"
+      },
+      {
+        "name": "Joy",
+        "role": "Sound"
+      }
+    ]
+  },
+  {
+    "id": "proj-012",
+    "title": "Documentary: Voices of Roosevelt Ave",
+    "creator": "Andre",
+    "creatorEmail": "andre@example.com",
+    "major": "Film & Television",
+    "category": "Interactive Media",
+    "tools": [
+      "Premiere Pro",
+      "Audacity",
+      "Zoom H5"
+    ],
+    "description": "A documentary built from interviews with shop owners along Roosevelt Avenue.",
+    "thumbnail": "assets/thumbnails/project-010.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-04-18",
+    "likes": 52,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-012-1",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-02-08"
+      }
+    ],
+    "role": "Producer and editor",
+    "duration": "10 weeks",
+    "team": [
+      {
+        "name": "Andre",
+        "role": "Producer and editor"
+      }
+    ]
+  },
+  {
+    "id": "proj-013",
+    "title": "Oil Portrait Series",
+    "creator": "Camila",
+    "creatorEmail": "camila@example.com",
+    "major": "Fine Arts",
+    "category": "Art & Design",
+    "tools": [
+      "Oil paint",
+      "Canvas",
+      "Photoshop"
+    ],
+    "description": "Six oil portraits of family members, painted from photographs and finished with a digital catalogue.",
+    "thumbnail": "assets/thumbnails/project-002.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-09-30",
+    "likes": 89,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-013-1",
+        "author": "Mei",
+        "text": "This is exactly the kind of project I want to try next.",
+        "date": "2026-03-11"
+      },
+      {
+        "id": "c-013-2",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-04-12"
+      }
+    ],
+    "role": "Painter",
+    "duration": "12 weeks",
+    "team": [
+      {
+        "name": "Camila",
+        "role": "Painter"
+      }
+    ]
+  },
+  {
+    "id": "proj-014",
+    "title": "Ink Landscapes of Queens",
+    "creator": "Wen",
+    "creatorEmail": "wen@example.com",
+    "major": "Fine Arts",
+    "category": "Art & Design",
+    "tools": [
+      "Ink",
+      "Watercolor",
+      "Procreate"
+    ],
+    "description": "A set of ink and watercolor landscapes of neighbourhood parks, scanned and edited in Procreate.",
+    "thumbnail": "assets/thumbnails/project-002.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-02-14",
+    "likes": 126,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-014-1",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-04-14"
+      },
+      {
+        "id": "c-014-2",
+        "author": "Lena",
+        "text": "Clean and easy to follow.",
+        "date": "2026-05-15"
+      },
+      {
+        "id": "c-014-3",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-06-16"
+      }
+    ],
+    "role": "Illustrator",
+    "duration": "6 weeks",
+    "team": [
+      {
+        "name": "Wen",
+        "role": "Illustrator"
+      }
+    ]
+  },
+  {
+    "id": "proj-015",
+    "title": "Typography Poster Set",
+    "creator": "Darnell",
+    "creatorEmail": "darnell@example.com",
+    "major": "Fine Arts, Design Studies",
+    "category": "Art & Design",
+    "tools": [
+      "Illustrator",
+      "InDesign",
+      "Figma"
+    ],
+    "description": "Four posters exploring how type changes the mood of one short poem.",
+    "thumbnail": "assets/thumbnails/project-002.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-07-08",
+    "likes": 33,
+    "recommended": false,
+    "images": [],
+    "comments": [],
+    "role": "Designer",
+    "duration": "5 weeks",
+    "team": [
+      {
+        "name": "Darnell",
+        "role": "Designer"
+      }
+    ]
+  },
+  {
+    "id": "proj-016",
+    "title": "Brand Identity for a Local Bakery",
+    "creator": "Sofia",
+    "creatorEmail": "sofia@example.com",
+    "major": "Fine Arts, Design Studies",
+    "category": "Business",
+    "tools": [
+      "Illustrator",
+      "Photoshop",
+      "Canva"
+    ],
+    "description": "A logo, packaging and menu for a neighbourhood bakery, designed with the owner's feedback.",
+    "thumbnail": "assets/thumbnails/project-006.png",
+    "projectUrl": "https://example.com",
+    "date": "2025-11-03",
+    "likes": 70,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-016-1",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-06-20"
+      }
+    ],
+    "role": "Brand designer",
+    "duration": "8 weeks",
+    "team": [
+      {
+        "name": "Sofia",
+        "role": "Brand designer"
+      },
+      {
+        "name": "Leo",
+        "role": "Copywriting"
+      }
+    ]
+  },
+  {
+    "id": "proj-017",
+    "title": "Modular Desk Lamp",
+    "creator": "Ravi",
+    "creatorEmail": "ravi@example.com",
+    "major": "Industrial Design",
+    "category": "Engineering",
+    "tools": [
+      "Fusion 360",
+      "3D Printing",
+      "Keyshot"
+    ],
+    "description": "A desk lamp with swappable arms, prototyped on a 3D printer and rendered in Keyshot.",
+    "thumbnail": "assets/thumbnails/project-005.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-05-22",
+    "likes": 107,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-017-1",
+        "author": "Aaliyah",
+        "text": "Really clear and well made. I learned something.",
+        "date": "2026-07-23"
+      },
+      {
+        "id": "c-017-2",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-08-24"
+      }
+    ],
+    "role": "Product designer",
+    "duration": "9 weeks",
+    "team": [
+      {
+        "name": "Ravi",
+        "role": "Product designer"
+      }
+    ]
+  },
+  {
+    "id": "proj-018",
+    "title": "Folding Bike Helmet",
+    "creator": "Aisha",
+    "creatorEmail": "aisha@example.com",
+    "major": "Industrial Design",
+    "category": "Engineering",
+    "tools": [
+      "Rhino",
+      "3D Printing",
+      "Illustrator"
+    ],
+    "description": "A helmet that folds flat to fit in a bag, with three prototype rounds.",
+    "thumbnail": "assets/thumbnails/project-005.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-10-15",
+    "likes": 144,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-018-1",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-08-06"
+      },
+      {
+        "id": "c-018-2",
+        "author": "Mei",
+        "text": "This is exactly the kind of project I want to try next.",
+        "date": "2026-09-07"
+      },
+      {
+        "id": "c-018-3",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-10-08"
+      }
+    ],
+    "role": "Product designer",
+    "duration": "11 weeks",
+    "team": [
+      {
+        "name": "Aisha",
+        "role": "Product designer"
+      },
+      {
+        "name": "Mateo",
+        "role": "Materials testing"
+      }
+    ]
+  },
+  {
+    "id": "proj-019",
+    "title": "Street Portraits of Long Island City",
+    "creator": "Noah",
+    "creatorEmail": "noah@example.com",
+    "major": "Photography",
+    "category": "Art & Design",
+    "tools": [
+      "Canon R6",
+      "Lightroom",
+      "Photoshop"
+    ],
+    "description": "Twenty black-and-white portraits of people who work in Long Island City.",
+    "thumbnail": "assets/thumbnails/project-002.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-03-09",
+    "likes": 51,
+    "recommended": false,
+    "images": [],
+    "comments": [],
+    "role": "Photographer",
+    "duration": "8 weeks",
+    "team": [
+      {
+        "name": "Noah",
+        "role": "Photographer"
+      }
+    ]
+  },
+  {
+    "id": "proj-020",
+    "title": "Night Light: A City Photo Essay",
+    "creator": "Imani",
+    "creatorEmail": "imani@example.com",
+    "major": "Photography",
+    "category": "Art & Design",
+    "tools": [
+      "Sony A7",
+      "Lightroom",
+      "Capture One"
+    ],
+    "description": "A photo essay on how the city looks between midnight and dawn.",
+    "thumbnail": "assets/thumbnails/project-002.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-08-27",
+    "likes": 88,
+    "recommended": true,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-020-1",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-10-12"
+      }
+    ],
+    "role": "Photographer",
+    "duration": "6 weeks",
+    "team": [
+      {
+        "name": "Imani",
+        "role": "Photographer"
+      }
+    ]
+  },
+  {
+    "id": "proj-021",
+    "title": "Interactive Museum Wall",
+    "creator": "Kai",
+    "creatorEmail": "kai@example.com",
+    "major": "New Media Technology",
+    "category": "Interactive Media",
+    "tools": [
+      "p5.js",
+      "Arduino",
+      "Projector"
+    ],
+    "description": "A projected wall that reacts to movement, built for a student showcase.",
+    "thumbnail": "assets/thumbnails/project-010.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-01-20",
+    "likes": 125,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-021-1",
+        "author": "Lena",
+        "text": "Clean and easy to follow.",
+        "date": "2026-01-15"
+      },
+      {
+        "id": "c-021-2",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-02-16"
+      }
+    ],
+    "role": "Developer and designer",
+    "duration": "10 weeks",
+    "team": [
+      {
+        "name": "Kai",
+        "role": "Developer and designer"
+      },
+      {
+        "name": "Luz",
+        "role": "Sound"
+      },
+      {
+        "name": "Omari",
+        "role": "Hardware"
+      }
+    ]
+  },
+  {
+    "id": "proj-022",
+    "title": "Augmented Reality Campus Tour",
+    "creator": "Yuki",
+    "creatorEmail": "yuki@example.com",
+    "major": "New Media Technology",
+    "category": "Interactive Media",
+    "tools": [
+      "Unity",
+      "Vuforia",
+      "Blender"
+    ],
+    "description": "A phone app that shows facts about campus buildings when you point the camera at them.",
+    "thumbnail": "assets/thumbnails/project-010.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-06-11",
+    "likes": 32,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-022-1",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-02-18"
+      }
+    ],
+    "role": "Developer",
+    "duration": "12 weeks",
+    "team": [
+      {
+        "name": "Yuki",
+        "role": "Developer"
+      },
+      {
+        "name": "Beth",
+        "role": "3D modelling"
+      }
+    ]
+  },
+  {
+    "id": "proj-023",
+    "title": "Weather Dashboard",
+    "creator": "Tomas",
+    "creatorEmail": "tomas@example.com",
+    "major": "Computer Science",
+    "category": "Technology",
+    "tools": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Open-Meteo API"
+    ],
+    "description": "A dashboard that shows a 7-day forecast and saves favourite cities.",
+    "thumbnail": "assets/thumbnails/project-003.png",
+    "projectUrl": "https://example.com",
+    "date": "2025-09-12",
+    "likes": 69,
+    "recommended": false,
+    "images": [],
+    "comments": [],
+    "role": "Front-end developer",
+    "duration": "4 weeks",
+    "team": [
+      {
+        "name": "Tomas",
+        "role": "Front-end developer"
+      }
+    ]
+  },
+  {
+    "id": "proj-024",
+    "title": "Library Seat Finder",
+    "creator": "Priyanka",
+    "creatorEmail": "priyanka@example.com",
+    "major": "Computer Science",
+    "category": "Technology",
+    "tools": [
+      "Python",
+      "Flask",
+      "SQLite"
+    ],
+    "description": "A web app where students report free seats in the library, with live counts per floor.",
+    "thumbnail": "assets/thumbnails/project-003.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-04-18",
+    "likes": 106,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-024-1",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-04-24"
+      }
+    ],
+    "role": "Full-stack developer",
+    "duration": "9 weeks",
+    "team": [
+      {
+        "name": "Priyanka",
+        "role": "Full-stack developer"
+      },
+      {
+        "name": "Dev",
+        "role": "Testing"
+      }
+    ]
+  },
+  {
+    "id": "proj-025",
+    "title": "Maze Solver Visualizer",
+    "creator": "Bryan",
+    "creatorEmail": "bryan@example.com",
+    "major": "Computer Science",
+    "category": "Education",
+    "tools": [
+      "Python",
+      "Pygame"
+    ],
+    "description": "Animations of breadth-first, depth-first and A* search solving random mazes.",
+    "thumbnail": "assets/thumbnails/project-008.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-09-30",
+    "likes": 143,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-025-1",
+        "author": "Mei",
+        "text": "This is exactly the kind of project I want to try next.",
+        "date": "2026-05-07"
+      },
+      {
+        "id": "c-025-2",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-06-08"
+      }
+    ],
+    "role": "Developer",
+    "duration": "5 weeks",
+    "team": [
+      {
+        "name": "Bryan",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "proj-026",
+    "title": "Network Lab Monitor",
+    "creator": "Hassan",
+    "creatorEmail": "hassan@example.com",
+    "major": "Computer Technology",
+    "category": "Technology",
+    "tools": [
+      "Raspberry Pi",
+      "Python",
+      "Grafana"
+    ],
+    "description": "A small monitor that checks lab network speed every hour and charts it.",
+    "thumbnail": "assets/thumbnails/project-003.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-02-14",
+    "likes": 50,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-026-1",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-06-10"
+      },
+      {
+        "id": "c-026-2",
+        "author": "Lena",
+        "text": "Clean and easy to follow.",
+        "date": "2026-07-11"
+      },
+      {
+        "id": "c-026-3",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-08-12"
+      }
+    ],
+    "role": "Developer",
+    "duration": "8 weeks",
+    "team": [
+      {
+        "name": "Hassan",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "proj-027",
+    "title": "Build Your First PC Guide",
+    "creator": "Mia",
+    "creatorEmail": "mia@example.com",
+    "major": "Computer Technology",
+    "category": "Education",
+    "tools": [
+      "Canva",
+      "Photoshop",
+      "PCPartPicker"
+    ],
+    "description": "A step-by-step visual guide for new students building a budget computer.",
+    "thumbnail": "assets/thumbnails/project-008.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-07-08",
+    "likes": 87,
+    "recommended": false,
+    "images": [],
+    "comments": [],
+    "role": "Writer and designer",
+    "duration": "6 weeks",
+    "team": [
+      {
+        "name": "Mia",
+        "role": "Writer and designer"
+      }
+    ]
+  },
+  {
+    "id": "proj-028",
+    "title": "Phishing Email Detector",
+    "creator": "Zara",
+    "creatorEmail": "zara@example.com",
+    "major": "Cybersecurity",
+    "category": "Technology",
+    "tools": [
+      "Python",
+      "scikit-learn",
+      "Wireshark"
+    ],
+    "description": "A classifier that flags suspicious emails and explains why, trained on a public dataset.",
+    "thumbnail": "assets/thumbnails/project-003.png",
+    "projectUrl": "https://example.com",
+    "date": "2025-11-03",
+    "likes": 124,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-028-1",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-08-16"
+      }
+    ],
+    "role": "Developer",
+    "duration": "10 weeks",
+    "team": [
+      {
+        "name": "Zara",
+        "role": "Developer"
+      },
+      {
+        "name": "Ethan",
+        "role": "Data labelling"
+      }
+    ]
+  },
+  {
+    "id": "proj-029",
+    "title": "Home Network Security Audit",
+    "creator": "Malik",
+    "creatorEmail": "malik@example.com",
+    "major": "Cybersecurity",
+    "category": "Technology",
+    "tools": [
+      "Nmap",
+      "Wireshark",
+      "Kali Linux"
+    ],
+    "description": "A checklist and report from auditing three home networks, with consent from each owner.",
+    "thumbnail": "assets/thumbnails/project-003.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-05-22",
+    "likes": 31,
+    "recommended": true,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-029-1",
+        "author": "Aaliyah",
+        "text": "Really clear and well made. I learned something.",
+        "date": "2026-09-19"
+      },
+      {
+        "id": "c-029-2",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-10-20"
+      }
+    ],
+    "role": "Security tester",
+    "duration": "7 weeks",
+    "team": [
+      {
+        "name": "Malik",
+        "role": "Security tester"
+      }
+    ]
+  },
+  {
+    "id": "proj-030",
+    "title": "Pedestrian Bridge Model",
+    "creator": "Gabriela",
+    "creatorEmail": "gabriela@example.com",
+    "major": "Engineering Civil",
+    "category": "Engineering",
+    "tools": [
+      "AutoCAD",
+      "Balsa wood",
+      "Excel"
+    ],
+    "description": "A scale bridge tested to hold 20 times its own weight, with load calculations.",
+    "thumbnail": "assets/thumbnails/project-005.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-10-15",
+    "likes": 68,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-030-1",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-10-22"
+      },
+      {
+        "id": "c-030-2",
+        "author": "Mei",
+        "text": "This is exactly the kind of project I want to try next.",
+        "date": "2026-01-23"
+      },
+      {
+        "id": "c-030-3",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-02-24"
+      }
+    ],
+    "role": "Structural designer",
+    "duration": "8 weeks",
+    "team": [
+      {
+        "name": "Gabriela",
+        "role": "Structural designer"
+      },
+      {
+        "name": "Pete",
+        "role": "Testing"
+      },
+      {
+        "name": "Amara",
+        "role": "Drawings"
+      }
+    ]
+  },
+  {
+    "id": "proj-031",
+    "title": "Rainwater Collection Plan",
+    "creator": "Idris",
+    "creatorEmail": "idris@example.com",
+    "major": "Engineering Civil",
+    "category": "Science",
+    "tools": [
+      "AutoCAD",
+      "Excel",
+      "SketchUp"
+    ],
+    "description": "A plan for collecting rainwater from a campus roof to water the garden.",
+    "thumbnail": "assets/thumbnails/project-009.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-03-09",
+    "likes": 105,
+    "recommended": false,
+    "images": [],
+    "comments": [],
+    "role": "Civil designer",
+    "duration": "9 weeks",
+    "team": [
+      {
+        "name": "Idris",
+        "role": "Civil designer"
+      },
+      {
+        "name": "Fen",
+        "role": "Research"
+      }
+    ]
+  },
+  {
+    "id": "proj-032",
+    "title": "Habit Tracker App",
+    "creator": "Olivia",
+    "creatorEmail": "olivia@example.com",
+    "major": "Programming and Software",
+    "category": "Technology",
+    "tools": [
+      "JavaScript",
+      "React",
+      "Firebase"
+    ],
+    "description": "A simple habit tracker with streaks and weekly summaries.",
+    "thumbnail": "assets/thumbnails/project-003.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-08-27",
+    "likes": 142,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-032-1",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-02-08"
+      }
+    ],
+    "role": "Developer",
+    "duration": "6 weeks",
+    "team": [
+      {
+        "name": "Olivia",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "proj-033",
+    "title": "Recipe Scaler",
+    "creator": "Jamal",
+    "creatorEmail": "jamal@example.com",
+    "major": "Programming and Software",
+    "category": "Technology",
+    "tools": [
+      "Python",
+      "Tkinter"
+    ],
+    "description": "A desktop tool that scales recipes for any number of servings and converts units.",
+    "thumbnail": "assets/thumbnails/project-003.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-01-20",
+    "likes": 49,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-033-1",
+        "author": "Lena",
+        "text": "Clean and easy to follow.",
+        "date": "2026-03-11"
+      },
+      {
+        "id": "c-033-2",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-04-12"
+      }
+    ],
+    "role": "Developer",
+    "duration": "3 weeks",
+    "team": [
+      {
+        "name": "Jamal",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "proj-034",
+    "title": "Budget Buddy Spreadsheet",
+    "creator": "Elena",
+    "creatorEmail": "elena@example.com",
+    "major": "Accounting",
+    "category": "Finance",
+    "tools": [
+      "Excel",
+      "Google Sheets"
+    ],
+    "description": "A monthly budget workbook with charts, built for first-time student renters.",
+    "thumbnail": "assets/thumbnails/project-004.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-06-11",
+    "likes": 86,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-034-1",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-04-14"
+      }
+    ],
+    "role": "Analyst",
+    "duration": "5 weeks",
+    "team": [
+      {
+        "name": "Elena",
+        "role": "Analyst"
+      }
+    ]
+  },
+  {
+    "id": "proj-035",
+    "title": "Small Business Bookkeeping Guide",
+    "creator": "Tariq",
+    "creatorEmail": "tariq@example.com",
+    "major": "Accounting",
+    "category": "Finance",
+    "tools": [
+      "Excel",
+      "QuickBooks",
+      "Canva"
+    ],
+    "description": "A short guide and template set for food-truck owners keeping their own books.",
+    "thumbnail": "assets/thumbnails/project-004.png",
+    "projectUrl": "https://example.com",
+    "date": "2025-09-12",
+    "likes": 123,
+    "recommended": false,
+    "images": [],
+    "comments": [],
+    "role": "Analyst and writer",
+    "duration": "7 weeks",
+    "team": [
+      {
+        "name": "Tariq",
+        "role": "Analyst and writer"
+      },
+      {
+        "name": "Rosa",
+        "role": "Interviews"
+      }
+    ]
+  },
+  {
+    "id": "proj-036",
+    "title": "Startup Pitch: Study Snacks",
+    "creator": "Hana",
+    "creatorEmail": "hana@example.com",
+    "major": "Business Administration",
+    "category": "Business",
+    "tools": [
+      "PowerPoint",
+      "Excel",
+      "Canva"
+    ],
+    "description": "A pitch deck and financial plan for a healthy snack box for students.",
+    "thumbnail": "assets/thumbnails/project-006.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-04-18",
+    "likes": 30,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-036-1",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-06-20"
+      }
+    ],
+    "role": "Founder",
+    "duration": "8 weeks",
+    "team": [
+      {
+        "name": "Hana",
+        "role": "Founder"
+      },
+      {
+        "name": "Dylan",
+        "role": "Finance"
+      }
+    ]
+  },
+  {
+    "id": "proj-037",
+    "title": "Social Media Plan for a Gym",
+    "creator": "Marcus J.",
+    "creatorEmail": "marcus@example.com",
+    "major": "Business Administration",
+    "category": "Business",
+    "tools": [
+      "Canva",
+      "Buffer",
+      "Excel"
+    ],
+    "description": "A three-month content plan and results report for a neighbourhood gym.",
+    "thumbnail": "assets/thumbnails/project-006.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-09-30",
+    "likes": 67,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-037-1",
+        "author": "Mei",
+        "text": "This is exactly the kind of project I want to try next.",
+        "date": "2026-07-23"
+      },
+      {
+        "id": "c-037-2",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-08-24"
+      }
+    ],
+    "role": "Marketer",
+    "duration": "6 weeks",
+    "team": [
+      {
+        "name": "Marcus J.",
+        "role": "Marketer"
+      }
+    ]
+  },
+  {
+    "id": "proj-038",
+    "title": "Event Plan: Spring Career Fair",
+    "creator": "Nia",
+    "creatorEmail": "nia@example.com",
+    "major": "Hospitality & Events",
+    "category": "Business",
+    "tools": [
+      "Excel",
+      "Canva",
+      "Trello"
+    ],
+    "description": "A full plan for a 200-person career fair: budget, schedule and vendor list.",
+    "thumbnail": "assets/thumbnails/project-006.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-02-14",
+    "likes": 104,
+    "recommended": true,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-038-1",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-08-06"
+      },
+      {
+        "id": "c-038-2",
+        "author": "Lena",
+        "text": "Clean and easy to follow.",
+        "date": "2026-09-07"
+      },
+      {
+        "id": "c-038-3",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-10-08"
+      }
+    ],
+    "role": "Event planner",
+    "duration": "9 weeks",
+    "team": [
+      {
+        "name": "Nia",
+        "role": "Event planner"
+      },
+      {
+        "name": "Jon",
+        "role": "Logistics"
+      }
+    ]
+  },
+  {
+    "id": "proj-039",
+    "title": "Boutique Hotel Concept",
+    "creator": "Lucas",
+    "creatorEmail": "lucas@example.com",
+    "major": "Hospitality & Events",
+    "category": "Business",
+    "tools": [
+      "PowerPoint",
+      "SketchUp",
+      "Excel"
+    ],
+    "description": "A concept and budget for a 20-room hotel in Long Island City.",
+    "thumbnail": "assets/thumbnails/project-006.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-07-08",
+    "likes": 141,
+    "recommended": false,
+    "images": [],
+    "comments": [],
+    "role": "Concept designer",
+    "duration": "10 weeks",
+    "team": [
+      {
+        "name": "Lucas",
+        "role": "Concept designer"
+      }
+    ]
+  },
+  {
+    "id": "proj-040",
+    "title": "Tenant Rights Fact Sheets",
+    "creator": "Sade",
+    "creatorEmail": "sade@example.com",
+    "major": "Paralegal Studies",
+    "category": "Education",
+    "tools": [
+      "Word",
+      "Canva",
+      "Google Docs"
+    ],
+    "description": "Plain-language fact sheets on tenant rights, reviewed by a faculty member.",
+    "thumbnail": "assets/thumbnails/project-008.png",
+    "projectUrl": "https://example.com",
+    "date": "2025-11-03",
+    "likes": 48,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-040-1",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-10-12"
+      }
+    ],
+    "role": "Researcher",
+    "duration": "6 weeks",
+    "team": [
+      {
+        "name": "Sade",
+        "role": "Researcher"
+      }
+    ]
+  },
+  {
+    "id": "proj-041",
+    "title": "Mock Trial Case Brief",
+    "creator": "Victor",
+    "creatorEmail": "victor@example.com",
+    "major": "Paralegal Studies",
+    "category": "Education",
+    "tools": [
+      "Word",
+      "Westlaw",
+      "PowerPoint"
+    ],
+    "description": "A case brief and slides prepared for the college mock trial team.",
+    "thumbnail": "assets/thumbnails/project-008.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-05-22",
+    "likes": 85,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-041-1",
+        "author": "Aaliyah",
+        "text": "Really clear and well made. I learned something.",
+        "date": "2026-01-15"
+      },
+      {
+        "id": "c-041-2",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-02-16"
+      }
+    ],
+    "role": "Researcher",
+    "duration": "5 weeks",
+    "team": [
+      {
+        "name": "Victor",
+        "role": "Researcher"
+      },
+      {
+        "name": "Ines",
+        "role": "Presenting"
+      }
+    ]
+  },
+  {
+    "id": "proj-042",
+    "title": "Hand Hygiene Training Video",
+    "creator": "Grace",
+    "creatorEmail": "grace@example.com",
+    "major": "Nursing",
+    "category": "Healthcare",
+    "tools": [
+      "Premiere Pro",
+      "Canva",
+      "Camera"
+    ],
+    "description": "A three-minute training video on hand hygiene for new nursing students.",
+    "thumbnail": "assets/thumbnails/project-007.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-10-15",
+    "likes": 122,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-042-1",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-02-18"
+      },
+      {
+        "id": "c-042-2",
+        "author": "Mei",
+        "text": "This is exactly the kind of project I want to try next.",
+        "date": "2026-03-19"
+      },
+      {
+        "id": "c-042-3",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-04-20"
+      }
+    ],
+    "role": "Producer",
+    "duration": "5 weeks",
+    "team": [
+      {
+        "name": "Grace",
+        "role": "Producer"
+      }
+    ]
+  },
+  {
+    "id": "proj-043",
+    "title": "Patient Care Plan Template",
+    "creator": "Daniel",
+    "creatorEmail": "daniel@example.com",
+    "major": "Nursing",
+    "category": "Healthcare",
+    "tools": [
+      "Word",
+      "Canva",
+      "Google Forms"
+    ],
+    "description": "A fillable care plan template tested by classmates during lab practice.",
+    "thumbnail": "assets/thumbnails/project-007.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-03-09",
+    "likes": 29,
+    "recommended": false,
+    "images": [],
+    "comments": [],
+    "role": "Designer",
+    "duration": "4 weeks",
+    "team": [
+      {
+        "name": "Daniel",
+        "role": "Designer"
+      }
+    ]
+  },
+  {
+    "id": "proj-044",
+    "title": "Healthy Cooking on a Budget",
+    "creator": "Rosa",
+    "creatorEmail": "rosa@example.com",
+    "major": "Nutrition & Culinary",
+    "category": "Healthcare",
+    "tools": [
+      "Canva",
+      "Camera",
+      "Excel"
+    ],
+    "description": "A cookbook of 15 meals under five dollars per serving, with nutrition facts.",
+    "thumbnail": "assets/thumbnails/project-007.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-08-27",
+    "likes": 66,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-044-1",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-04-24"
+      }
+    ],
+    "role": "Cook and writer",
+    "duration": "8 weeks",
+    "team": [
+      {
+        "name": "Rosa",
+        "role": "Cook and writer"
+      },
+      {
+        "name": "Amir",
+        "role": "Photography"
+      }
+    ]
+  },
+  {
+    "id": "proj-045",
+    "title": "Meal Prep Cost Calculator",
+    "creator": "Tess",
+    "creatorEmail": "tess@example.com",
+    "major": "Nutrition & Culinary",
+    "category": "Technology",
+    "tools": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "description": "A web tool that totals cost and calories for a week of meals.",
+    "thumbnail": "assets/thumbnails/project-003.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-01-20",
+    "likes": 103,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-045-1",
+        "author": "Lena",
+        "text": "Clean and easy to follow.",
+        "date": "2026-05-07"
+      },
+      {
+        "id": "c-045-2",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-06-08"
+      }
+    ],
+    "role": "Developer",
+    "duration": "4 weeks",
+    "team": [
+      {
+        "name": "Tess",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "proj-046",
+    "title": "Hand Therapy Exercise Cards",
+    "creator": "Ping",
+    "creatorEmail": "ping@example.com",
+    "major": "Occupational Therapy asst.",
+    "category": "Healthcare",
+    "tools": [
+      "Illustrator",
+      "Canva"
+    ],
+    "description": "A set of illustrated exercise cards for hand recovery, with large text.",
+    "thumbnail": "assets/thumbnails/project-007.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-06-11",
+    "likes": 140,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-046-1",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-06-10"
+      }
+    ],
+    "role": "Illustrator",
+    "duration": "6 weeks",
+    "team": [
+      {
+        "name": "Ping",
+        "role": "Illustrator"
+      },
+      {
+        "name": "Cora",
+        "role": "Research"
+      }
+    ]
+  },
+  {
+    "id": "proj-047",
+    "title": "Adaptive Utensil Prototype",
+    "creator": "Hugo",
+    "creatorEmail": "hugo@example.com",
+    "major": "Occupational Therapy asst.",
+    "category": "Engineering",
+    "tools": [
+      "Fusion 360",
+      "3D Printing"
+    ],
+    "description": "A 3D-printed grip that makes spoons easier to hold, tested with three people.",
+    "thumbnail": "assets/thumbnails/project-005.png",
+    "projectUrl": "https://example.com",
+    "date": "2025-09-12",
+    "likes": 47,
+    "recommended": true,
+    "images": [],
+    "comments": [],
+    "role": "Designer",
+    "duration": "9 weeks",
+    "team": [
+      {
+        "name": "Hugo",
+        "role": "Designer"
+      }
+    ]
+  },
+  {
+    "id": "proj-048",
+    "title": "Vaccine Facts Infographic",
+    "creator": "Layla",
+    "creatorEmail": "layla@example.com",
+    "major": "Public and Community Health",
+    "category": "Healthcare",
+    "tools": [
+      "Illustrator",
+      "Canva",
+      "Excel"
+    ],
+    "description": "An infographic that answers the ten most common vaccine questions.",
+    "thumbnail": "assets/thumbnails/project-007.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-04-18",
+    "likes": 84,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-048-1",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-08-16"
+      }
+    ],
+    "role": "Designer",
+    "duration": "4 weeks",
+    "team": [
+      {
+        "name": "Layla",
+        "role": "Designer"
+      }
+    ]
+  },
+  {
+    "id": "proj-049",
+    "title": "Neighborhood Health Survey",
+    "creator": "Omar K.",
+    "creatorEmail": "omar@example.com",
+    "major": "Public and Community Health",
+    "category": "Science",
+    "tools": [
+      "Google Forms",
+      "Excel",
+      "Tableau"
+    ],
+    "description": "A 120-person survey on access to clinics, shown in an interactive map.",
+    "thumbnail": "assets/thumbnails/project-009.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-09-30",
+    "likes": 121,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-049-1",
+        "author": "Mei",
+        "text": "This is exactly the kind of project I want to try next.",
+        "date": "2026-09-19"
+      },
+      {
+        "id": "c-049-2",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-10-20"
+      }
+    ],
+    "role": "Researcher",
+    "duration": "10 weeks",
+    "team": [
+      {
+        "name": "Omar K.",
+        "role": "Researcher"
+      },
+      {
+        "name": "Jess",
+        "role": "Data entry"
+      }
+    ]
+  },
+  {
+    "id": "proj-050",
+    "title": "Pet First-Aid Pocket Guide",
+    "creator": "Bianca",
+    "creatorEmail": "bianca@example.com",
+    "major": "Veterinary Technology",
+    "category": "Healthcare",
+    "tools": [
+      "Canva",
+      "Illustrator"
+    ],
+    "description": "A pocket guide for dog and cat first aid, reviewed by a vet technician.",
+    "thumbnail": "assets/thumbnails/project-007.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-02-14",
+    "likes": 28,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-050-1",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-10-22"
+      },
+      {
+        "id": "c-050-2",
+        "author": "Lena",
+        "text": "Clean and easy to follow.",
+        "date": "2026-01-23"
+      },
+      {
+        "id": "c-050-3",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-02-24"
+      }
+    ],
+    "role": "Writer and designer",
+    "duration": "6 weeks",
+    "team": [
+      {
+        "name": "Bianca",
+        "role": "Writer and designer"
+      }
+    ]
+  },
+  {
+    "id": "proj-051",
+    "title": "Shelter Adoption Dashboard",
+    "creator": "Eddie",
+    "creatorEmail": "eddie@example.com",
+    "major": "Veterinary Technology",
+    "category": "Science",
+    "tools": [
+      "Excel",
+      "Tableau",
+      "Python"
+    ],
+    "description": "A dashboard of adoption rates at a local shelter by month and animal type.",
+    "thumbnail": "assets/thumbnails/project-009.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-07-08",
+    "likes": 65,
+    "recommended": false,
+    "images": [],
+    "comments": [],
+    "role": "Analyst",
+    "duration": "7 weeks",
+    "team": [
+      {
+        "name": "Eddie",
+        "role": "Analyst"
+      }
+    ]
+  },
+  {
+    "id": "proj-052",
+    "title": "Biology Lab Flashcards",
+    "creator": "Amara",
+    "creatorEmail": "amara@example.com",
+    "major": "Biology",
+    "category": "Education",
+    "tools": [
+      "Anki",
+      "Canva"
+    ],
+    "description": "Flashcards for cell biology, with diagrams drawn by hand and scanned.",
+    "thumbnail": "assets/thumbnails/project-008.png",
+    "projectUrl": "https://example.com",
+    "date": "2025-11-03",
+    "likes": 102,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-052-1",
+        "author": "Chris",
+        "text": "Great idea, the result looks professional.",
+        "date": "2026-02-08"
+      }
+    ],
+    "role": "Creator",
+    "duration": "4 weeks",
+    "team": [
+      {
+        "name": "Amara",
+        "role": "Creator"
+      }
+    ]
+  },
+  {
+    "id": "proj-053",
+    "title": "Compost Bin Experiment",
+    "creator": "Felix",
+    "creatorEmail": "felix@example.com",
+    "major": "Biology",
+    "category": "Science",
+    "tools": [
+      "Arduino",
+      "Excel",
+      "Sensors"
+    ],
+    "description": "A month-long experiment tracking compost temperature with a sensor.",
+    "thumbnail": "assets/thumbnails/project-009.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-05-22",
+    "likes": 139,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-053-1",
+        "author": "Aaliyah",
+        "text": "Really clear and well made. I learned something.",
+        "date": "2026-03-11"
+      },
+      {
+        "id": "c-053-2",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-04-12"
+      }
+    ],
+    "role": "Researcher",
+    "duration": "8 weeks",
+    "team": [
+      {
+        "name": "Felix",
+        "role": "Researcher"
+      },
+      {
+        "name": "Mina",
+        "role": "Data"
+      }
+    ]
+  },
+  {
+    "id": "proj-054",
+    "title": "Language Learning Quiz App",
+    "creator": "Ayesha",
+    "creatorEmail": "ayesha@example.com",
+    "major": "Education",
+    "category": "Education",
+    "tools": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "description": "A quiz app for practising Spanish vocabulary with spaced repetition.",
+    "thumbnail": "assets/thumbnails/project-008.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-10-15",
+    "likes": 46,
+    "recommended": false,
+    "images": [],
+    "comments": [
+      {
+        "id": "c-054-1",
+        "author": "Diego",
+        "text": "Love the detail here, nice work.",
+        "date": "2026-04-14"
+      },
+      {
+        "id": "c-054-2",
+        "author": "Mei",
+        "text": "This is exactly the kind of project I want to try next.",
+        "date": "2026-05-15"
+      },
+      {
+        "id": "c-054-3",
+        "author": "Kofi",
+        "text": "The presentation is great. Would like to see a process write-up.",
+        "date": "2026-06-16"
+      }
+    ],
+    "role": "Developer",
+    "duration": "5 weeks",
+    "team": [
+      {
+        "name": "Ayesha",
+        "role": "Developer"
+      }
+    ]
+  },
+  {
+    "id": "proj-055",
+    "title": "Retro Platformer: Bodega Cat",
+    "creator": "Tyrone",
+    "creatorEmail": "tyrone@example.com",
+    "major": "Digital Media",
+    "category": "Game Design",
+    "tools": [
+      "Godot",
+      "Aseprite",
+      "Audacity"
+    ],
+    "description": "A pixel-art platformer about a cat who runs a corner store.",
+    "thumbnail": "assets/thumbnails/project-001.png",
+    "projectUrl": "https://example.com",
+    "date": "2026-03-09",
+    "likes": 83,
+    "recommended": false,
+    "images": [],
+    "comments": [],
+    "role": "Designer and developer",
+    "duration": "12 weeks",
+    "team": [
+      {
+        "name": "Tyrone",
+        "role": "Designer and developer"
+      },
+      {
+        "name": "Kim",
+        "role": "Music"
+      }
+    ]
   }
 ]
