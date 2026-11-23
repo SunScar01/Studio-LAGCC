@@ -3,13 +3,154 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project | LAGCC STUDIO Showcase</title>
+  <title>Project | LAGCC STUDIO</title>
+  <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script src="js/theme.js"></script>
 </head>
 <body>
-  <a href="index.html">Back to gallery</a>
-  <h1>Project</h1>
-  <p>Project details coming soon.</p>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-logo" href="index.html"><img class="logo--light" src="assets/images/logo-horizontal.svg" alt="LAGCC STUDIO, home" width="162" height="46"><img class="logo--dark" src="assets/images/logo-horizontal-dark.svg" alt="LAGCC STUDIO, home" width="162" height="46"></a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="index.html#projects">Explore</a></li>
+          <li><a href="index.html">Collections</a></li>
+          <li><a href="index.html">About</a></li>
+        </ul>
+      </nav>
+      <input class="site-search" id="site-search" type="search" placeholder="Search works, students" aria-label="Search projects">
+      <div class="site-actions">
+        <button class="icon-button icon-button--plain" type="button" id="theme-toggle" aria-label="Switch to dark theme">
+          <svg class="icon-moon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.3542 15.3542C19.3176 15.7708 18.1856 16.0001 17 16.0001C12.0294 16.0001 8 11.9706 8 7.00006C8 5.81449 8.22924 4.68246 8.64581 3.64587C5.33648 4.9758 3 8.21507 3 12.0001C3 16.9706 7.02944 21.0001 12 21.0001C15.785 21.0001 19.0243 18.6636 20.3542 15.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" hidden><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <a class="header-avatar" id="profile-link" href="my-profile.html" aria-label="Your profile" hidden><svg class="avatar-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="8.5" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg><img id="header-avatar-img" src="" alt="" hidden></a>
+        <a href="login.html" id="auth-link">Log in</a>
+        <a class="button" href="signup.html" id="header-cta">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container project-page" id="project-page" hidden>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> / <a href="index.html">Collections</a> / <span id="crumb-title" aria-current="page"></span>
+    </nav>
+    <p class="project-major" id="project-major"></p>
+    <h1 class="project-title" id="project-title"></h1>
+
+    <div class="project-bar">
+      <div class="project-people">
+        <span class="avatar-stack" id="avatar-stack" aria-hidden="true"></span>
+        <p class="project-people__text"><a id="creator-link" href="#"></a><span id="teammate-count"></span></p>
+      </div>
+      <div class="project-actions">
+        <span class="pill" id="like-pill"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.6-9 9-9 9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span id="like-count"></span><span class="visually-hidden"> likes</span></span>
+        <a class="pill" href="#comments" id="comment-pill"></a>
+        <button class="pill" type="button" id="save-button" aria-pressed="false">Save</button>
+        <button class="pill" type="button" id="share-button">Share</button>
+        <a class="button button--dark" id="view-project" href="#" target="_blank" rel="noopener noreferrer">View Project<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+    </div>
+    <p class="visually-hidden" id="project-status" role="status"></p>
+
+    <figure class="project-hero">
+      <img id="project-image" src="" alt="">
+    </figure>
+    <ul class="project-thumbs" id="project-thumbs" hidden></ul>
+
+    <dl class="project-facts">
+      <div><dt>Role</dt><dd id="fact-role"></dd></div>
+      <div><dt>Timeline</dt><dd id="fact-duration"></dd></div>
+      <div><dt>Tools</dt><dd id="fact-tools"></dd></div>
+      <div><dt>Completed</dt><dd id="fact-date"></dd></div>
+    </dl>
+
+    <section class="project-section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About this project</h2>
+      <p class="project-about" id="project-about"></p>
+    </section>
+
+    <section class="project-section" aria-labelledby="team-heading">
+      <div class="project-section__head">
+        <h2 id="team-heading">Team</h2>
+        <p id="team-count"></p>
+      </div>
+      <ul class="team-list" id="team-list"></ul>
+    </section>
+
+    <section class="project-section project-section--narrow" id="comments" aria-labelledby="comments-heading">
+      <h2 id="comments-heading">Comments (<span id="comments-total">0</span>)</h2>
+      <form class="comment-form" id="comment-form" hidden>
+        <span class="avatar-dot" id="comment-me" aria-hidden="true"></span>
+        <div class="comment-form__main">
+          <label class="visually-hidden" for="comment-text">Your comment</label>
+          <textarea id="comment-text" maxlength="500" rows="4" placeholder="Say what you liked, or ask a question&hellip;"></textarea>
+          <div class="comment-form__foot">
+            <p>Be kind and specific. <span id="comment-count">0/500</span></p>
+            <button class="button button--dark" type="submit" id="comment-post" disabled>Post comment</button>
+          </div>
+        </div>
+      </form>
+      <p class="comment-login" id="comment-login" hidden>Log in to join the conversation. <a href="login.html">Log in</a> / <a href="signup.html">Sign up</a></p>
+      <ul class="comment-list" id="comment-list"></ul>
+    </section>
+  </main>
+
+  <main class="container project-page" id="project-missing" hidden>
+    <h1 class="project-title">Project not found</h1>
+    <p>We could not find that project. <a href="index.html#projects">Back to all projects</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <section class="footer-col" aria-labelledby="footer-contact">
+        <h2 class="footer-col__title" id="footer-contact">Contact Us</h2>
+        <address class="footer-address">
+          31-10 Thompson Avenue<br>
+          Long Island City, NY 11101<br>
+          LaGuardia Community College
+        </address>
+        <a class="footer-link--accent" href="https://www.google.com/maps/search/?api=1&amp;query=31-10+Thompson+Avenue+Long+Island+City+NY+11101">Maps and Directions</a>
+      </section>
+
+      <section class="footer-col" aria-labelledby="footer-links">
+        <h2 class="footer-col__title" id="footer-links">Quicklinks</h2>
+        <ul>
+          <li><a href="#">Majors</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="index.html">Collections</a></li>
+          <li><a href="submit.html">Start Your Project</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col" aria-labelledby="footer-follow">
+        <h2 class="footer-col__title" id="footer-follow">Follow Us</h2>
+        <!-- LaGuardia CC official accounts -->
+        <ul class="footer-social">
+          <li><a href="https://www.linkedin.com/school/laguardia-community-college/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)"><img src="assets/icons/linkedin.svg" alt="" width="32" height="32"></a></li>
+          <li><a href="https://www.facebook.com/LaGuardiaCC" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in a new tab)"><img src="assets/icons/facebook.svg" alt="" width="32" height="32"></a></li>
+          <li><a href="https://x.com/LaGuardiaCC" target="_blank" rel="noopener noreferrer" aria-label="X (opens in a new tab)"><img src="assets/icons/x.svg" alt="" width="32" height="32"></a></li>
+          <li><a href="https://www.instagram.com/LaGuardiaCC/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)"><img src="assets/icons/instagram.svg" alt="" width="32" height="32"></a></li>
+          <li><a href="https://www.youtube.com/user/LaGuardiaCCollege" target="_blank" rel="noopener noreferrer" aria-label="YouTube (opens in a new tab)"><img src="assets/icons/youtube.svg" alt="" width="32" height="32"></a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col" aria-labelledby="footer-brand">
+        <h2 class="footer-col__title footer-col__title--brand" id="footer-brand">Studio LAGCC</h2>
+        <p>Student work from every major</p>
+        <a class="button" href="submit.html">Start project</a>
+      </section>
+    </div>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/bookmarks.js"></script>
+  <script src="js/explore.js"></script>
+  <script src="js/comments.js"></script>
   <script src="js/project.js"></script>
 </body>
 </html>
