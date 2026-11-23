@@ -593,3 +593,10 @@ span.pill { cursor: default; }
   .form-actions { flex-direction: column-reverse; }
   .submit-button, .form-actions .button--secondary { width: 100%; }
 }
+
+.submit-gate { max-width: 560px; margin: var(--space-12) auto; padding: var(--space-8); border-radius: var(--radius-card); background: var(--color-surface); text-align: center; }
+.submit-gate[hidden], #submit-flow[hidden] { display: none; }
+.submit-gate h2 { margin: 0 0 var(--space-3); font-size: clamp(1.5rem, 3vw, 2rem); }
+.submit-gate p { margin: 0 0 var(--space-6); color: var(--color-text-muted); font-size: 1.125rem; }
+.submit-gate__actions { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; }
+.submit-gate .button--secondary { display: inline-block; padding: var(--space-3) var(--space-8); border-radius: 999px; text-decoration: none; font-weight: 600; }
