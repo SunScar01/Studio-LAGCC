@@ -292,3 +292,55 @@
 /* hero fade (js/hero.js changes opacity and transform while you scroll) */
 .hero { overflow: hidden; }
 .hero > .container { will-change: opacity, transform; }
+
+/* ---------- Explore by major menu ---------- */
+.site-header { position: relative; z-index: 30; background: var(--color-bg); }
+.nav-explore { padding: 0; border: 0; background: none; color: var(--color-text); font: inherit; font-size: var(--text-sm); cursor: pointer; transition: color var(--transition); }
+.nav-explore:hover, .nav-explore:focus-visible, .nav-explore[aria-expanded="true"] { color: var(--color-link-hover); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+
+.explore-overlay { position: fixed; inset: 0; z-index: 20; background: rgba(0, 0, 0, 0.45); }
+.explore-menu { position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100vh - 80px); overflow-y: auto; background: var(--color-bg); border-bottom: 1px solid var(--color-border); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12); }
+.explore-menu:focus { outline: none; }
+.explore-menu__inner { padding-block: var(--space-6) var(--space-8); }
+.explore-menu__title { margin: 0 0 var(--space-8); font-size: var(--text-xl); font-weight: 700; line-height: 1.15; }
+.explore-menu__grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: var(--space-8); }
+.explore-menu__cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-6); }
+.explore-menu__group { margin: 0 0 var(--space-4); font-size: var(--text-base); font-weight: 700; color: var(--color-text-muted); }
+.explore-menu__list { margin: 0; padding: 0; list-style: none; }
+.explore-menu__list li + li { margin-top: var(--space-3); }
+.explore-menu__list a { color: var(--color-text); text-decoration: none; transition: color var(--transition); }
+.explore-menu__list a:hover, .explore-menu__list a:focus-visible { color: var(--color-link-hover); text-decoration: underline; }
+
+.explore-menu__links { display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-6); margin-bottom: var(--space-6); }
+.explore-menu__all { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--color-text); font-weight: 700; text-decoration: none; transition: color var(--transition); }
+.explore-menu__all:hover, .explore-menu__all:focus-visible { color: var(--color-link-hover); }
+.explore-menu__label { display: flex; align-items: center; gap: var(--space-2); margin: 0 0 var(--space-3); font-size: var(--text-sm); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-text-muted); }
+.explore-menu__label::before { content: ""; width: 10px; height: 10px; background: var(--color-text-muted); }
+.explore-feature { display: block; color: var(--color-text); text-decoration: none; }
+.explore-feature[hidden] { display: none; }
+.explore-feature__image { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-card); background: var(--color-surface); transition: opacity var(--transition); }
+.explore-feature:hover .explore-feature__image { opacity: 0.9; }
+.explore-feature__title { display: block; margin-top: var(--space-3); font-size: var(--text-lg); font-weight: 700; }
+.explore-feature:hover .explore-feature__title { color: var(--color-link-hover); }
+.explore-feature__meta { display: block; color: var(--color-text-muted); font-size: var(--text-sm); }
+
+@media (max-width: 960px) {
+  .explore-menu__grid { grid-template-columns: 1fr; }
+  .explore-menu__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .explore-menu__cols { grid-template-columns: 1fr; }
+  .explore-menu__side { display: none; }
+}
+
+/* "Major: Nursing  x" pill above the grid */
+.active-filter { display: inline-flex; align-items: center; gap: var(--space-2); margin: 0 0 var(--space-4); padding: var(--space-1) var(--space-2) var(--space-1) var(--space-4); border-radius: 999px; background: var(--color-bg); font-size: var(--text-sm); }
+.active-filter[hidden] { display: none; }
+.active-filter__clear { display: grid; place-items: center; width: 24px; height: 24px; padding: 0; border: 0; border-radius: 50%; background: var(--color-surface); color: var(--color-text); font-size: 1rem; line-height: 1; cursor: pointer; }
+.active-filter__clear:hover { background: var(--color-border); }
+
+/* menu links sit inside .site-nav, so give them their own size and spacing */
+.site-nav .explore-menu__list a { font-size: var(--text-base); }
+.site-nav .explore-menu__all { font-size: var(--text-base); }
+.site-nav .explore-feature { font-size: var(--text-base); }
+.nav-item { position: static; }
