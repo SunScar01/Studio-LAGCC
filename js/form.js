@@ -8,9 +8,14 @@
   let step = 1;
   let thumbUrl = "";
 
-  // signed-in students get their name filled in
+  // only signed-in students can submit; everyone else sees a log in / sign up message
   const user = getUser();
-  if (user && user.name) $("f-name").value = user.name;
+  if (!user) {
+    $("submit-flow").hidden = true;
+    $("submit-gate").hidden = false;
+    return;
+  }
+  if (user.name) $("f-name").value = user.name;
 
   function setError(id, message) {
     const input = $("f-" + id);
