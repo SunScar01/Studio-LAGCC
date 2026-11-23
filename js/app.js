@@ -16,13 +16,15 @@ function hideMessage() {
 let allProjects = [];
 let currentCategory = "All";
 let currentQuery = "";
+let currentMajor = "";
 let currentSort = "trending";
 const PAGE_SIZE = 8;
 let visibleCount = PAGE_SIZE;
+let hasScrolledToResults = false;
 
 function updateGallery() {
   const grid = document.getElementById("project-grid");
-  const results = sortProjects(filterProjects(allProjects, currentCategory, currentQuery), currentSort);
+  const results = sortProjects(filterProjects(allProjects, currentCategory, currentQuery, currentMajor), currentSort);
   const shown = results.slice(0, visibleCount);                  // "Load More Work" raises visibleCount
 
   renderProjects(shown, grid);
@@ -32,8 +34,11 @@ function updateGallery() {
   document.getElementById("result-count").textContent =
     "Showing " + shown.length + " of " + results.length + (results.length === 1 ? " project" : " projects");
 
+  document.getElementById("major-filter").hidden = currentMajor === "";
+  document.getElementById("major-name").textContent = currentMajor;
+
   if (results.length === 0) {
-    const what = currentQuery ? "\u201c" + currentQuery + "\u201d" : currentCategory;
+    const what = currentQuery ? "\u201c" + currentQuery + "\u201d" : (currentMajor || currentCategory);
     document.getElementById("no-results-text").textContent = "No projects match " + what + ".";
   }
 
@@ -44,6 +49,7 @@ function saveToUrl() {
   const params = new URLSearchParams();
   if (currentCategory !== "All") params.set("category", currentCategory);
   if (currentQuery) params.set("q", currentQuery);
+  if (currentMajor) params.set("major", currentMajor);
   const text = params.toString();
   history.replaceState(null, "", text ? "?" + text : window.location.pathname);   // refresh keeps the filters
 }
@@ -83,9 +89,16 @@ function setupFilters() {
     updateGallery();
   });
 
+  document.getElementById("major-clear").addEventListener("click", function () {
+    currentMajor = "";
+    visibleCount = PAGE_SIZE;
+    updateGallery();
+  });
+
   document.getElementById("clear-filters").addEventListener("click", function () {
     search.value = "";
     currentQuery = "";
+    currentMajor = "";
     setCategory("All");
     updateGallery();
   });
@@ -98,6 +111,7 @@ function setupFilters() {
   });
   setCategory(known ? wanted : "All");
   currentQuery = (params.get("q") || "").trim();
+  currentMajor = (params.get("major") || "").trim();
   search.value = currentQuery;
 }
 
@@ -114,6 +128,11 @@ async function init() {
 
     allProjects = projects;
     updateGallery();
+
+    if (window.location.search && !hasScrolledToResults) {       // arrived from the menu or a search: show the results, not the hero
+      hasScrolledToResults = true;
+      document.getElementById("projects").scrollIntoView();
+    }
   } catch (error) {
     console.error(error);
     showMessage("Something went wrong.", "We couldn't load the projects right now.", true);
