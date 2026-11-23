@@ -196,7 +196,7 @@ async function initMe() {
 
 document.getElementById("site-search").addEventListener("keydown", function (event) {
   if (event.key === "Enter" && event.target.value.trim() !== "") {
-    window.location.href = "index.html?q=" + encodeURIComponent(event.target.value.trim());
+    window.location.href = "collections.html?q=" + encodeURIComponent(event.target.value.trim());
   }
 });
 
